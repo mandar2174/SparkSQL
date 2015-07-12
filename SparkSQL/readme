@@ -1,0 +1,6 @@
+To connect to the odbc database we need odbc driver which need to build with maven
+
+Use the following command to build the odbc driver:
+mvn install:install-file -Dfile=ojdbc14.jar -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.2.0 -Dpackaging=jar
+
+
