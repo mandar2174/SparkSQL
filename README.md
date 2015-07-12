@@ -1,4 +1,4 @@
-SparkSQL Code for 
+SparkSQL Code for following content
 1)Reading the data from mysql and oracle 
 2)Create the data frame by reading data from db
 3)Perform the group By,aggregate function on data frame
