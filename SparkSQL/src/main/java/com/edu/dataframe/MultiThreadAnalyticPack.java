@@ -37,17 +37,17 @@ class AnalyticPackThread implements Callable<DataFrame>
 		System.out.println( "Executing the Thread : " + count );
 		if ( operation.equals( "select" ) )
 		{
-			return dataframe.select( "BILLCITY" );
+			return dataframe.select( "ColumnName" );
 		}
 		else if ( operation.equals( "groupBy" ) )
 		{
-			return dataframe.groupBy( "BILLCITY" ).count();
+			return dataframe.groupBy( "ColumnName" ).count();
 		}
 		else
 		{
 			Map<String, String> aggExp = new HashMap<>();
-			aggExp.put( "BILLCITY", "count" );
-			return dataframe.groupBy( "BILLCITY" ).agg( aggExp );
+			aggExp.put( "ColumnName", "count" );
+			return dataframe.groupBy( "ColumnName" ).agg( aggExp );
 
 		}
 	}
@@ -59,11 +59,11 @@ public class MultiThreadAnalyticPack
 
 	private static final String ORACLE_DRIVER = "oracle.jdbc.driver.OracleDriver";
 
-	private static final String ORACLE_USERNAME = "prasads";
+	private static final String ORACLE_USERNAME = "xxxx";
 
-	private static final String ORACLE_PWD = "prasads";
+	private static final String ORACLE_PWD = "xxxx";
 
-	private static final String ORACLE_DB_MACHINE_IP = "10.113.59.5";
+	private static final String ORACLE_DB_MACHINE_IP = "xx.xxx.xx.x";
 
 	private static final String ORACLE_DB_MACHINE_PORT = "1521";
 
@@ -89,7 +89,7 @@ public class MultiThreadAnalyticPack
 		ExecutorService executorService = Executors.newFixedThreadPool( MAX_THREAD );
 		Stack<DataFrame> dataFrame = new Stack<>();
 		String tableName = "employee";
-		String tableName1 = "IDEA_AGEING_BADDEBT_201415";
+		String tableName1 = "tableName";
 		String operation[] =
 		{ "groupBy", "select", "agg" };
 

@@ -13,8 +13,6 @@ import org.apache.spark.sql.DataFrame;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SQLContext;
 
-import scala.collection.Seq;
-
 public class OracleDBConnect implements Serializable
 {
 
@@ -22,11 +20,11 @@ public class OracleDBConnect implements Serializable
 
 	private static final String ORACLE_DRIVER = "oracle.jdbc.driver.OracleDriver";
 
-	private static final String ORACLE_USERNAME = "prasads";
+	private static final String ORACLE_USERNAME = "oracle_user_name";
 
-	private static final String ORACLE_PWD = "prasads";
+	private static final String ORACLE_PWD = "oracle_user_name";
 
-	private static final String ORACLE_DB_MACHINE_IP = "10.113.59.5";
+	private static final String ORACLE_DB_MACHINE_IP = "xxx.xx.xx.x";
 
 	private static final String ORACLE_DB_MACHINE_PORT = "1521";
 
@@ -50,7 +48,7 @@ public class OracleDBConnect implements Serializable
 	{
 
 		// Load MySQL query result as DataFrame
-		DataFrame jdbcDF = loadDataBase("IDEA_AGEING_BADDEBT_201415");
+		DataFrame jdbcDF = loadDataBase("tableName");
 
 		DataFrame df1 = loadDataBase("employee");
 

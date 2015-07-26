@@ -1,7 +1,6 @@
 package com.edu.dataframe;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,9 +11,6 @@ import org.apache.spark.sql.Column;
 import org.apache.spark.sql.DataFrame;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SQLContext;
-import org.apache.spark.sql.catalyst.expressions.Average;
-
-import scala.Tuple2;
 
 public class OracleMainJDBCConnect implements Serializable
 {
@@ -23,11 +19,11 @@ public class OracleMainJDBCConnect implements Serializable
 
 	private static final String ORACLE_DRIVER = "oracle.jdbc.driver.OracleDriver";
 
-	private static final String ORACLE_USERNAME = "prasads";
+	private static final String ORACLE_USERNAME = "username";
 
-	private static final String ORACLE_PWD = "prasads";
+	private static final String ORACLE_PWD = "username";
 
-	private static final String ORACLE_DB_MACHINE_IP = "10.113.59.5";
+	private static final String ORACLE_DB_MACHINE_IP = "xxx.xx.xx.x";
 
 	private static final String ORACLE_DB_MACHINE_PORT = "1521";
 
@@ -52,7 +48,7 @@ public class OracleMainJDBCConnect implements Serializable
 		options.put( "driver", ORACLE_DRIVER );
 		options.put( "url", ORACLE_CONNECTION_URL );
 		//options.put( "dbtable", "employee" );
-		options.put( "dbtable", "IDEA_AGEING_BADDEBT_201415" );
+		options.put( "dbtable", "tableName" );
 
 		// Load MySQL query result as DataFrame
 		DataFrame jdbcDF = sqlContext.load( "jdbc", options );
