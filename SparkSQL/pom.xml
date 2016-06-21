@@ -8,7 +8,7 @@
 	<description>project for spark sql implementation</description>
 
 	<properties>
-		<spark.version>1.4.0</spark.version>
+		<spark.version>1.4.1</spark.version>
 		<mysql.version>5.1.32</mysql.version>
 	</properties>
 
@@ -24,7 +24,11 @@
 			<artifactId>spark-sql_2.11</artifactId>
 			<version>${spark.version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-hive_2.11</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -36,20 +40,27 @@
 			<artifactId>ojdbc14</artifactId>
 			<version>10.2.0.2.0</version>
 		</dependency>
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.9.1</version>
+		</dependency>
+		<!-- http://mvnrepository.com/artifact/org.apache.spark/spark-mllib_2.10 -->
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-mllib_2.11</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		<!-- http://mvnrepository.com/artifact/org.apache.spark/spark-streaming_2.10 -->
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-streaming_2.10</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.spark-project.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>2.5.0-spark</version>
+		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.2</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>
