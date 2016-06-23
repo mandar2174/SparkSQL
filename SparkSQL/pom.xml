@@ -8,7 +8,7 @@
 	<description>project for spark sql implementation</description>
 
 	<properties>
-		<spark.version>1.4.1</spark.version>
+		<spark.version>1.6.1</spark.version>
 		<mysql.version>5.1.32</mysql.version>
 	</properties>
 
@@ -48,13 +48,13 @@
 		<!-- http://mvnrepository.com/artifact/org.apache.spark/spark-mllib_2.10 -->
 		<dependency>
 			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-mllib_2.11</artifactId>
+			<artifactId>spark-mllib_2.10</artifactId>
 			<version>${spark.version}</version>
 		</dependency>
 		<!-- http://mvnrepository.com/artifact/org.apache.spark/spark-streaming_2.10 -->
 		<dependency>
 			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-streaming_2.10</artifactId>
+			<artifactId>spark-streaming_2.11</artifactId>
 			<version>${spark.version}</version>
 		</dependency>
 		<dependency>
