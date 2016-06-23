@@ -4,3 +4,54 @@ Use the following command to build the odbc driver:
 mvn install:install-file -Dfile=ojdbc14.jar -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.2.0 -Dpackaging=jar
 
 
+How to build the project
+
+1)Download the SparkSQL Project and extract project
+
+2) Run the maven install command to run the program
+
+mvn clean install 
+
+3)import the project in eclipse as maven project
+
+4) Run the spark program :
+
+You can run the spark using from eclipse directly by right click on program and click on java application 
+
+or create the jar of the application 
+
+5)Use the spark submit command to run the program in differnt deployment
+
+Run the spark program in standalone mode : 
+
+1) Goto the spark directory where spark folder is present
+
+cd path_to_spark_folder/
+
+e.g : cd /usr/local/spark-1.4.1
+
+2) Execute the following command to run spark program
+
+./bin/spark-submit --class com.spark.rdd.example.SparkWordCount --master local[4] SparkJar/WordCount.jar /user/hduser/README.md /user/hduser/WordCountOutput2
+
+where 
+--class : Name of the class that you want to execute(e.g : we specified full package name of class com.spark.rdd.example.SparkWordCount)
+--master : deployment mode of spark.here we have specified deployment mode as local(possible value is yarn-client,yarn-master,local[4]
+local[4] : How many thread core to be used for processing purpose.if number specified is more than number of core on machine spark will go with it own way
+SparkJar/WordCount.jar : Name of the jar
+/user/hduser/README.md : command line argument to the program
+/user/hduser/WordCountOutput2 : command line argument to the program
+
+
+
+
+
+
+
+./bin/spark-submit --class com.spark.rdd.example.SparkWordCount --master local[4] SparkJar/WordCount.jar /user/hduser/README.md /user/hduser/WordCountOutput2
+
+
+
+
+
+
