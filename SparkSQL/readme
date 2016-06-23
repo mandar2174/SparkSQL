@@ -3,7 +3,6 @@ To connect to the odbc database we need odbc driver which need to build with mav
 Use the following command to build the odbc driver:
 mvn install:install-file -Dfile=ojdbc14.jar -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.2.0 -Dpackaging=jar
 
-
 How to build the project
 
 1)Download the SparkSQL Project and extract project
@@ -41,17 +40,3 @@ local[4] : How many thread core to be used for processing purpose.if number spec
 SparkJar/WordCount.jar : Name of the jar
 /user/hduser/README.md : command line argument to the program
 /user/hduser/WordCountOutput2 : command line argument to the program
-
-
-
-
-
-
-
-./bin/spark-submit --class com.spark.rdd.example.SparkWordCount --master local[4] SparkJar/WordCount.jar /user/hduser/README.md /user/hduser/WordCountOutput2
-
-
-
-
-
-
