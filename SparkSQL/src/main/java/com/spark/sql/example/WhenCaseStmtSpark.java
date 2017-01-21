@@ -50,25 +50,22 @@ public class WhenCaseStmtSpark {
 		dataFrame.show();
 
 		// first level case stmt
-		// DataFrame firstLevelCaseStmp =
-		// dataFrame.withColumn("New_Case_Column",functions.when(dataFrame.col("complaint_count").between(50,
-		// 100), "with 50 - 100").otherwise("grater than 100"));
-		// firstLevelCaseStmp.show();
+		DataFrame firstLevelCaseStmp = dataFrame.withColumn(
+				"New_Case_Column",
+				functions.when(
+						dataFrame.col("complaint_count").between(50, 100),
+						"with 50 - 100").otherwise("grater than 100"));
+		firstLevelCaseStmp.show();
 
-		DataFrame secondLevelCaseStmp = dataFrame
-				.withColumn(
-						"New_Case_Column",
-						functions
-								.when(dataFrame.col("complaint_count").between(
-										50, 100),
-										functions
-												.when(dataFrame.col(
-														"call_count").between(
-														10, 40),
-														"cmpcount_50100_ccount_10_40")
-												.otherwise(
-														"cmpcount_50100_ccount_not_10_40"))
-								.otherwise("cmpcount_not_50_100"));
+		DataFrame secondLevelCaseStmp = dataFrame.withColumn(
+				"New_Case_Column",
+				functions.when(
+						dataFrame.col("complaint_count").between(50, 100),
+						functions.when(
+								dataFrame.col("call_count").between(10, 40),
+								"cmpcount_50100_ccount_10_40").otherwise(
+								"cmpcount_50100_ccount_not_10_40")).otherwise(
+						"cmpcount_not_50_100"));
 		secondLevelCaseStmp.show();
 
 	}
