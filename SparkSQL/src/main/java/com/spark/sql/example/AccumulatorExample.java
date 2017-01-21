@@ -43,7 +43,7 @@ public class AccumulatorExample {
 		dataTypeMap.put("TimestampType", DataTypes.TimestampType);
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		DataFrame dataFrame = formDataFrame();
 		
@@ -63,6 +63,7 @@ public class AccumulatorExample {
 		}).count();
 		
 		System.out.println("Total Complaint : " + count.value());
+		Thread.sleep(10000);
 		
 	}
 
@@ -73,26 +74,26 @@ public class AccumulatorExample {
 	 */
 	private static DataFrame formDataFrame() {
 		List<Row> rowElement = new ArrayList<Row>();
-		rowElement.add(RowFactory.create("2015-01-01 12:12:21", 10,
+		rowElement.add(RowFactory.create("2015-01-01 12:12:21", 10.0,
 				"2015-07-13 12:12:21", 100));
-		rowElement.add(RowFactory.create("2015-02-05 12:12:21", 20,
+		rowElement.add(RowFactory.create("2015-02-05 12:12:21", 20.0,
 				"2015-12-15 12:12:21", 85));
-		rowElement.add(RowFactory.create("2015-05-23 12:12:21", 30,
+		rowElement.add(RowFactory.create("2015-05-23 12:12:21", 30.0,
 				"2015-03-23 12:12:21", 250));
-		rowElement.add(RowFactory.create("2015-04-12 12:12:21", 40,
+		rowElement.add(RowFactory.create("2015-04-12 12:12:21", 40.0,
 				"2015-01-23 12:12:21", 520));
-		rowElement.add(RowFactory.create("2015-07-11 12:12:21", 50,
+		rowElement.add(RowFactory.create("2015-07-11 12:12:21", 50.0,
 				"2015-09-23 12:12:21", 96));
-		rowElement.add(RowFactory.create("2015-01-11 12:12:21", 50,
+		rowElement.add(RowFactory.create("2015-01-11 12:12:21", 50.0,
 				"2018-09-20 12:12:21", 70));
-		rowElement.add(RowFactory.create("2015-05-23 12:12:21", 50,
+		rowElement.add(RowFactory.create("2015-05-23 12:12:21", 50.0,
 				"2017-09-12 12:12:21", 30));
 
 		Map<String, String> columnNameType = new LinkedHashMap<String, String>();
 		columnNameType.put("call_day", "StringType");
 		columnNameType.put("call_count", "DoubleType");
 		columnNameType.put("complaint_day", "StringType");
-		columnNameType.put("complaint_count", "DoubleType");
+		columnNameType.put("complaint_count", "IntegerType");
 
 		DataFrame dataFrame = createDataFrame(rowElement, columnNameType);
 

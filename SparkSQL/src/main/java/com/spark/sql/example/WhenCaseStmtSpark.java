@@ -8,26 +8,20 @@ import java.util.Map;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaSparkContext;
-import org.apache.spark.api.java.function.Function;
-import org.apache.spark.broadcast.Broadcast;
 import org.apache.spark.sql.DataFrame;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.RowFactory;
 import org.apache.spark.sql.SQLContext;
+import org.apache.spark.sql.functions;
 import org.apache.spark.sql.types.DataType;
 import org.apache.spark.sql.types.DataTypes;
 import org.apache.spark.sql.types.StructField;
 import org.apache.spark.sql.types.StructType;
 
-/**
- * class for explaining broadcast functionality
- * @author mandar
- *
- */
-public class BroadCastVariableExample {
+public class WhenCaseStmtSpark {
 
 	private static final org.apache.log4j.Logger LOGGER = org.apache.log4j.Logger
-			.getLogger(BroadCastVariableExample.class);
+			.getLogger(WhenCaseStmtSpark.class);
 
 	private static final JavaSparkContext sc = new JavaSparkContext(
 			new SparkConf().setAppName("SparkJdbcDs").setMaster("local[*]"));
@@ -47,7 +41,7 @@ public class BroadCastVariableExample {
 		dataTypeMap.put("TimestampType", DataTypes.TimestampType);
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		DataFrame dataFrame = formDataFrame();
 
@@ -55,35 +49,28 @@ public class BroadCastVariableExample {
 		// display the data frame using take action
 		dataFrame.show();
 
-		// create the accumulator for counting number of complaint
+		// first level case stmt
+		// DataFrame firstLevelCaseStmp =
+		// dataFrame.withColumn("New_Case_Column",functions.when(dataFrame.col("complaint_count").between(50,
+		// 100), "with 50 - 100").otherwise("grater than 100"));
+		// firstLevelCaseStmp.show();
 
-		final Broadcast<Integer> broadCastVariable = sc.broadcast(10);
+		DataFrame secondLevelCaseStmp = dataFrame
+				.withColumn(
+						"New_Case_Column",
+						functions
+								.when(dataFrame.col("complaint_count").between(
+										50, 100),
+										functions
+												.when(dataFrame.col(
+														"call_count").between(
+														10, 40),
+														"cmpcount_50100_ccount_10_40")
+												.otherwise(
+														"cmpcount_50100_ccount_not_10_40"))
+								.otherwise("cmpcount_not_50_100"));
+		secondLevelCaseStmp.show();
 
-		List<Row> rowList = dataFrame.toJavaRDD().map(new Function<Row, Row>() {
-
-			public Row call(Row record) throws Exception {
-				Object[] element = new Object[record.length() + 1];
-				int index;
-				for (index = 0; index < record.length(); index++) {
-					element[index] = record.get(index);
-				}
-				element[index] = record.getInt(record.length()-1)
-						* broadCastVariable.value();
-
-				return RowFactory.create(element);
-			}
-		}).collect();
-
-		Map<String, String> columnNameType = new LinkedHashMap<String, String>();
-		columnNameType.put("call_day", "StringType");
-		columnNameType.put("call_count", "IntegerType");
-		columnNameType.put("complaint_day", "StringType");
-		columnNameType.put("complaint_count", "IntegerType");
-		columnNameType.put("complaint_count*10", "IntegerType");
-
-		System.out.println("BroadCast DataFrame");
-		DataFrame broadCastDF = createDataFrame(rowList, columnNameType);
-		broadCastDF.show();
 	}
 
 	/**
@@ -93,24 +80,24 @@ public class BroadCastVariableExample {
 	 */
 	private static DataFrame formDataFrame() {
 		List<Row> rowElement = new ArrayList<Row>();
-		rowElement.add(RowFactory.create("2015-01-01 12:12:21", 10,
+		rowElement.add(RowFactory.create("2015-01-01 12:12:21", 10.0,
 				"2015-07-13 12:12:21", 100));
-		rowElement.add(RowFactory.create("2015-02-05 12:12:21", 20,
+		rowElement.add(RowFactory.create("2015-02-05 12:12:21", 20.0,
 				"2015-12-15 12:12:21", 85));
-		rowElement.add(RowFactory.create("2015-05-23 12:12:21", 30,
+		rowElement.add(RowFactory.create("2015-05-23 12:12:21", 30.0,
 				"2015-03-23 12:12:21", 250));
-		rowElement.add(RowFactory.create("2015-04-12 12:12:21", 40,
+		rowElement.add(RowFactory.create("2015-04-12 12:12:21", 40.0,
 				"2015-01-23 12:12:21", 520));
-		rowElement.add(RowFactory.create("2015-07-11 12:12:21", 50,
+		rowElement.add(RowFactory.create("2015-07-11 12:12:21", 50.0,
 				"2015-09-23 12:12:21", 96));
-		rowElement.add(RowFactory.create("2015-01-11 12:12:21", 50,
+		rowElement.add(RowFactory.create("2015-01-11 12:12:21", 50.0,
 				"2018-09-20 12:12:21", 70));
-		rowElement.add(RowFactory.create("2015-05-23 12:12:21", 50,
+		rowElement.add(RowFactory.create("2015-05-23 12:12:21", 50.0,
 				"2017-09-12 12:12:21", 30));
 
 		Map<String, String> columnNameType = new LinkedHashMap<String, String>();
 		columnNameType.put("call_day", "StringType");
-		columnNameType.put("call_count", "IntegerType");
+		columnNameType.put("call_count", "DoubleType");
 		columnNameType.put("complaint_day", "StringType");
 		columnNameType.put("complaint_count", "IntegerType");
 
@@ -167,4 +154,5 @@ public class BroadCastVariableExample {
 		}
 		return null;
 	}
+
 }

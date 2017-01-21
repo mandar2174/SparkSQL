@@ -24,6 +24,11 @@ public final class JavaStatusTrackerDemo {
 	private static final JavaSparkContext jsc = new JavaSparkContext(
 			new SparkConf().setAppName(APP_NAME).setMaster("local[*]"));
 
+	/*
+	 * private static final JavaSparkContext jsc = new JavaSparkContext( new
+	 * SparkConf().setAppName(APP_NAME).setMaster( "spark://127.0.0.1:7077"));
+	 */
+
 	public static final class IdentityWithDelay<T> implements Function<T, T> {
 		public T call(T x) throws Exception {
 			Thread.sleep(2 * 1000); // 2 seconds
@@ -53,6 +58,7 @@ public final class JavaStatusTrackerDemo {
 		}
 
 		System.out.println("Job results are: " + jobFuture.get());
+		Thread.sleep(10000);
 		jsc.stop();
 	}
 }

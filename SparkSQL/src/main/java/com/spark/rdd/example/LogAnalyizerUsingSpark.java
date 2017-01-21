@@ -13,10 +13,11 @@ public class LogAnalyizerUsingSpark {
 
 	private static final JavaSparkContext sc = new JavaSparkContext(
 			new SparkConf().setAppName("LogAnalyzier").setMaster("local[*]"));
-	
+
 	public static void main(String[] args) throws InterruptedException {
-		JavaRDD<String> lines = sc.textFile("src/main/resources/access_log");
-		
+		JavaRDD<String> lines = sc
+				.textFile("file:///home/mandar/hiveUDF/SparkSimpleProject/src/main/resources/access_log");
+
 		long getRequestCount = lines.filter(new Function<String, Boolean>() {
 
 			public Boolean call(String v1) throws Exception {
@@ -26,16 +27,15 @@ public class LogAnalyizerUsingSpark {
 					return false;
 			}
 		}).persist(StorageLevel.MEMORY_ONLY()).repartition(10).count();
-		
+
 		LOGGER.info("Request count for GET : " + getRequestCount);
 
-		//cache the rdd
-		//lines.cache();
-		
-		
-		//cache the rdd using persist method based on storage level
-		//lines.persist(StorageLevel.MEMORY_ONLY());		
-		
+		// cache the rdd
+		// lines.cache();
+
+		// cache the rdd using persist method based on storage level
+		// lines.persist(StorageLevel.MEMORY_ONLY());
+
 		long postRequestCount = lines.filter(new Function<String, Boolean>() {
 
 			public Boolean call(String v1) throws Exception {
@@ -45,9 +45,10 @@ public class LogAnalyizerUsingSpark {
 					return false;
 			}
 		}).repartition(10).count();
-		
-		//line for running application in infintely
-		//Thread.sleep(100000);
-		//LOGGER.info("Request count for POST : " + postRequestCount);
+
+		LOGGER.info("Request count for POST : " + postRequestCount);
+		// line for running application in infintely
+		Thread.sleep(100000);
+
 	}
 }
