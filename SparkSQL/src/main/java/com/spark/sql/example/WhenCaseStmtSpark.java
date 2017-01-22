@@ -67,6 +67,8 @@ public class WhenCaseStmtSpark {
 								"cmpcount_50100_ccount_not_10_40")).otherwise(
 						"cmpcount_not_50_100"));
 		secondLevelCaseStmp.show();
+		
+		
 
 	}
 
