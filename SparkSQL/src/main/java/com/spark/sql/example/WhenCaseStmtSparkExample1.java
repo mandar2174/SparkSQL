@@ -15,6 +15,7 @@ import org.apache.spark.sql.Row;
 import org.apache.spark.sql.RowFactory;
 import org.apache.spark.sql.SQLContext;
 import org.apache.spark.sql.functions;
+import org.apache.spark.sql.hive.HiveContext;
 import org.apache.spark.sql.types.DataType;
 import org.apache.spark.sql.types.DataTypes;
 import org.apache.spark.sql.types.StructField;
@@ -28,7 +29,11 @@ public class WhenCaseStmtSparkExample1 {
 	private static final JavaSparkContext sc = new JavaSparkContext(
 			new SparkConf().setAppName("SparkJdbcDs").setMaster("local[*]"));
 
+	// create sql context for loading sql database
 	private static final SQLContext sqlContext = new SQLContext(sc);
+
+	// create hive context for loading hive database
+	private static SQLContext hiveContext = new HiveContext(sc.sc());
 
 	private static Map<String, DataType> dataTypeMap;
 
@@ -45,6 +50,10 @@ public class WhenCaseStmtSparkExample1 {
 
 	public static void main(String[] args) throws InterruptedException {
 
+		//create dataframe by loading hive table 
+		DataFrame hiveDataFrame = loadHiveTable(hiveContext, "dbName",
+				"tableName");
+		
 		DataFrame dataFrame = formDataFrame();
 
 		System.out.println("Displaying dataframe : ");
@@ -137,6 +146,13 @@ public class WhenCaseStmtSparkExample1 {
 		// print the record
 		d1.show();
 
+	}
+
+	private static DataFrame loadHiveTable(SQLContext hiveContext,
+			String dbName, String tableName) {
+		DataFrame df = hiveContext.sql("select * from " + dbName + "."
+				+ "tableName");
+		return df;
 	}
 
 	/**
