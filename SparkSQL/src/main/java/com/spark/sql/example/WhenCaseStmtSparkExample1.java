@@ -50,10 +50,16 @@ public class WhenCaseStmtSparkExample1 {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		//create dataframe by loading hive table 
-		DataFrame hiveDataFrame = loadHiveTable(hiveContext, "dbName",
-				"tableName");
-		
+		// create dataframe by loading hive table(Uncomment only when loading data from hive)
+		/*DataFrame df = loadHiveTable(hiveContext, "dbName", "tableName");
+
+		DataFrame tempDF = df.select(df.col("individual_exact_age"), functions
+				.explode(df.col("amft")).as("amft"));
+
+		DataFrame dataFrame = tempDF.select(df.col("individual_exact_age"),
+				tempDF.col("amft").getField("trans_date").as("trans_date"),
+				tempDF.col("amft").getField("activity_type")
+						.as("activity_type"));*/
 		DataFrame dataFrame = formDataFrame();
 
 		System.out.println("Displaying dataframe : ");
