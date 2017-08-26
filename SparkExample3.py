@@ -47,7 +47,7 @@ if __name__ == '__main__':
     .option("header", "true") \
     .option("inferschema", "true") \
     .option("delimiter", "\t") \
-    .load("file:///home/mandar/Downloads/Spark_Example/resources/meta_config_2")
+    .load("file:///home/mandar/Downloads/Spark_Example/resources/meta_config")
     
     metaconfig_dataframe.printSchema()
     metadata_result = metaconfig_dataframe.select("START", "LENGTH").collect()
@@ -78,18 +78,29 @@ if __name__ == '__main__':
     column_name_list = list()
     for metadata in metadata_result:
         record_dataframe = record_dataframe.withColumn("Column_" + str(index), record_dataframe.record.substr(int(math.floor(metadata.START)), int(metadata.LENGTH)))
+        print "Created column : " + str(index)
         column_name_list.append("Column_" + str(index))
         index = index + 1
         
         
-    record_dataframe.printSchema()
+    
     
     record_dataframe = record_dataframe.drop('record')
     
-    record_dataframe.printSchema()
+
+    record_field_delimited = 'A'  # A = comma, B. Tab, C. Pipe, D. Semi-colon
+    record_eof_choice = 'A'  # A. Unix - 0A , B. DOS (Windows) - 0D0A
+    record_header_choice = 'Y'  # Want header rec - Y or N
     
-    record_dataframe.repartition(1).write.format('com.databricks.spark.csv').options(delimiter='|').save("file:///home/mandar/Downloads/Spark_Example/resources/tsp_result")
     
+    if record_field_delimited == 'A':
+        record_dataframe.repartition(1).write.format('com.databricks.spark.csv').options(delimiter=',').save("file:///home/mandar/Downloads/Spark_Example/resources/tsp_result")
+    elif record_field_delimited == 'B':
+        record_dataframe.repartition(1).write.format('com.databricks.spark.csv').options(delimiter='\t').save("file:///home/mandar/Downloads/Spark_Example/resources/tsp_result")
+    elif record_field_delimited == 'C':
+        record_dataframe.repartition(1).write.format('com.databricks.spark.csv').options(delimiter='|').save("file:///home/mandar/Downloads/Spark_Example/resources/tsp_result")
+    else:
+        record_dataframe.repartition(1).write.format('com.databricks.spark.csv').options(delimiter=':').save("file:///home/mandar/Downloads/Spark_Example/resources/tsp_result")
     
     
     
