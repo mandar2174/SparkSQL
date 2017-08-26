@@ -1,0 +1,1006 @@
+FIELDNAME	START	END	LENGTH	DESCRIPTION
+Customer_Information	1	12	12	The original customer data
+SEQUENCE_NUMBER	13	22	10	Unique identifier for each customer record
+MATCH_FLAG	23	23	1	Indicates if the customer record was a match to the AMF
+DUPLICATE_INDICATOR	 24	33	10	Links duplicate records via sequence number
+RESERVED	34	51	18	RESERVED
+BUYL.MRC.0.23	52	52	1	MRC.0.23 M23 Kids L/M-tkt App/Shs BuyerID Life
+TRNL.MRC.0.23	53	55	3	MRC.0.23 M23 Kids L/M-tkt App/Shs Trans Life
+DOLL.MRC.0.23	56	61	6	MRC.0.23 M23 Kids L/M-tkt App/Shs Dollars Life
+RECL.MRC.0.23	62	67	6	MRC.0.23 M23 Kids L/M-tkt App/Shs Recency
+TRNA.MRC.0.23	68	70	3	MRC.0.23 M23 Kids L/M-tkt App/Shs Trans 0-12M
+DOLA.MRC.0.23	71	76	6	MRC.0.23 M23 Kids L/M-tkt App/Shs Dollars 0-12M
+BUYA.MRC.0.23	77	77	1	MRC.0.23 M23 Kids L/M-tkt App/Shs BuyerID 0-12M
+TRN_C.MRC.0.23	78	80	3	MRC.0.23 M23 Kids L/M-tkt App/Shs Trans 0-36M
+DOL_C.MRC.0.23	81	86	6	MRC.0.23 M23 Kids L/M-tkt App/Shs Dollars 0-36M
+BUY_C.MRC.0.23	87	87	1	MRC.0.23 M23 Kids L/M-tkt App/Shs BuyerID 0-36M
+BUYL.MRC.0.24	88	88	1	MRC.0.24 M24 Kids H-tkt App/Shoes BuyerID Life
+TRNL.MRC.0.24	89	91	3	MRC.0.24 M24 Kids H-tkt App/Shoes Trans Life
+DOLL.MRC.0.24	92	97	6	MRC.0.24 M24 Kids H-tkt App/Shoes Dollars Life
+RECL.MRC.0.24	98	 103	6	MRC.0.24 M24 Kids H-tkt App/Shoes Recency
+TRNA.MRC.0.24	104	 106	3	MRC.0.24 M24 Kids H-tkt App/Shoes Trans 0-12M
+DOLA.MRC.0.24	107	 112	6	MRC.0.24 M24 Kids H-tkt App/Shoes Dollars 0-12M
+BUYA.MRC.0.24	113	 113	1	MRC.0.24 M24 Kids H-tkt App/Shoes BuyerID 0-12M
+TRN_C.MRC.0.24	114	 116	3	MRC.0.24 M24 Kids H-tkt App/Shoes Trans 0-36M
+DOL_C.MRC.0.24	117	 122	6	MRC.0.24 M24 Kids H-tkt App/Shoes Dollars 0-36M
+BUY_C.MRC.0.24	123	 123	1	MRC.0.24 M24 Kids H-tkt App/Shoes BuyerID 0-36M
+BUYL.MRC.0.25	124	 124	1	MRC.0.25 M25 Kids Merch -all ages BuyerID Life
+TRNL.MRC.0.25	125	 127	3	MRC.0.25 M25 Kids Merch -all ages Trans Life
+DOLL.MRC.0.25	128	 133	6	MRC.0.25 M25 Kids Merch -all ages Dollars Life
+RECL.MRC.0.25	134	 139	6	MRC.0.25 M25 Kids Merch -all ages Recency
+TRNA.MRC.0.25	140	 142	3	MRC.0.25 M25 Kids Merch -all ages Trans 0-12M
+DOLA.MRC.0.25	143	 148	6	MRC.0.25 M25 Kids Merch -all ages Dollars 0-12M
+BUYA.MRC.0.25	149	 149	1	MRC.0.25 M25 Kids Merch -all ages BuyerID 0-12M
+TRN_C.MRC.0.25	150	 152	3	MRC.0.25 M25 Kids Merch -all ages Trans 0-36M
+DOL_C.MRC.0.25	153	 158	6	MRC.0.25 M25 Kids Merch -all ages Dollars 0-36M
+BUY_C.MRC.0.25	159	 159	1	MRC.0.25 M25 Kids Merch -all ages BuyerID 0-36M
+BUYL.MRC.0.26	160	 160	1	MRC.0.26 M26 Kids Merch -ages 0-6 BuyerID Life
+TRNL.MRC.0.26	161	 163	3	MRC.0.26 M26 Kids Merch -ages 0-6 Trans Life
+DOLL.MRC.0.26	164	 169	6	MRC.0.26 M26 Kids Merch -ages 0-6 Dollars Life
+RECL.MRC.0.26	170	 175	6	MRC.0.26 M26 Kids Merch -ages 0-6 Recency
+TRNA.MRC.0.26	176	 178	3	MRC.0.26 M26 Kids Merch -ages 0-6 Trans 0-12M
+DOLA.MRC.0.26	179	 184	6	MRC.0.26 M26 Kids Merch -ages 0-6 Dollars 0-12M
+BUYA.MRC.0.26	185	 185	1	MRC.0.26 M26 Kids Merch -ages 0-6 BuyerID 0-12M
+TRN_C.MRC.0.26	186	 188	3	MRC.0.26 M26 Kids Merch -ages 0-6 Trans 0-36M
+DOL_C.MRC.0.26	189	 194	6	MRC.0.26 M26 Kids Merch -ages 0-6 Dollars 0-36M
+BUY_C.MRC.0.26	195	 195	1	MRC.0.26 M26 Kids Merch -ages 0-6 BuyerID 0-36M
+BUYL.MRC.0.27	196	 196	1	MRC.0.27 M27 Kids Merch -ages 7+ BuyerID Life
+TRNL.MRC.0.27	197	 199	3	MRC.0.27 M27 Kids Merch -ages 7+ Trans Life
+DOLL.MRC.0.27	200	 205	6	MRC.0.27 M27 Kids Merch -ages 7+ Dollars Life
+RECL.MRC.0.27	206	 211	6	MRC.0.27 M27 Kids Merch -ages 7+ Recency
+TRNA.MRC.0.27	212	 214	3	MRC.0.27 M27 Kids Merch -ages 7+ Trans 0-12M
+DOLA.MRC.0.27	215	 220	6	MRC.0.27 M27 Kids Merch -ages 7+ Dollars 0-12M
+BUYA.MRC.0.27	221	 221	1	MRC.0.27 M27 Kids Merch -ages 7+ BuyerID 0-12M
+TRN_C.MRC.0.27	222	 224	3	MRC.0.27 M27 Kids Merch -ages 7+ Trans 0-36M
+DOL_C.MRC.0.27	225	 230	6	MRC.0.27 M27 Kids Merch -ages 7+ Dollars 0-36M
+BUY_C.MRC.0.27	231	 231	1	MRC.0.27 M27 Kids Merch -ages 7+ BuyerID 0-36M
+BUYL.MRC.0.28	232	 232	1	MRC.0.28 M28 Hm Decor AOV 0-100 BuyerID Life
+TRNL.MRC.0.28	233	 235	3	MRC.0.28 M28 Hm Decor AOV 0-100 Trans Life
+DOLL.MRC.0.28	236	 241	6	MRC.0.28 M28 Hm Decor AOV 0-100 Dollars Life
+RECL.MRC.0.28	242	 247	6	MRC.0.28 M28 Hm Decor AOV 0-100 Recency
+TRNA.MRC.0.28	248	 250	3	MRC.0.28 M28 Hm Decor AOV 0-100 Trans 0-12M
+DOLA.MRC.0.28	251	 256	6	MRC.0.28 M28 Hm Decor AOV 0-100 Dollars 0-12M
+BUYA.MRC.0.28	257	 257	1	MRC.0.28 M28 Hm Decor AOV 0-100 BuyerID 0-12M
+TRN_C.MRC.0.28	258	 260	3	MRC.0.28 M28 Hm Decor AOV 0-100 Trans 0-36M
+DOL_C.MRC.0.28	261	 266	6	MRC.0.28 M28 Hm Decor AOV 0-100 Dollars 0-36M
+BUY_C.MRC.0.28	267	 267	1	MRC.0.28 M28 Hm Decor AOV 0-100 BuyerID 0-36M
+BUYL.MRC.0.29	268	 268	1	MRC.0.29 M29 Hm Decor AOV 101-300 BuyerID Life
+TRNL.MRC.0.29	269	 271	3	MRC.0.29 M29 Hm Decor AOV 101-300 Trans Life
+DOLL.MRC.0.29	272	 277	6	MRC.0.29 M29 Hm Decor AOV 101-300 Dollars Life
+RECL.MRC.0.29	278	 283	6	MRC.0.29 M29 Hm Decor AOV 101-300 Recency
+TRNA.MRC.0.29	284	 286	3	MRC.0.29 M29 Hm Decor AOV 101-300 Trans 0-12M
+DOLA.MRC.0.29	287	 292	6	MRC.0.29 M29 Hm Decor AOV 101-300 Dollars 0-12M
+BUYA.MRC.0.29	293	 293	1	MRC.0.29 M29 Hm Decor AOV 101-300 BuyerID 0-12M
+TRN_C.MRC.0.29	294	 296	3	MRC.0.29 M29 Hm Decor AOV 101-300 Trans 0-36M
+DOL_C.MRC.0.29	297	 302	6	MRC.0.29 M29 Hm Decor AOV 101-300 Dollars 0-36M
+BUY_C.MRC.0.29	303	 303	1	MRC.0.29 M29 Hm Decor AOV 101-300 BuyerID 0-36M
+BUYL.MRC.0.30	304	 304	1	MRC.0.30 M30 Hm Decor AOV 301+ BuyerID Life
+TRNL.MRC.0.30	305	 307	3	MRC.0.30 M30 Hm Decor AOV 301+ Trans Life
+DOLL.MRC.0.30	308	 313	6	MRC.0.30 M30 Hm Decor AOV 301+ Dollars Life
+RECL.MRC.0.30	314	 319	6	MRC.0.30 M30 Hm Decor AOV 301+ Recency
+TRNA.MRC.0.30	320	 322	3	MRC.0.30 M30 Hm Decor AOV 301+ Trans 0-12M
+DOLA.MRC.0.30	323	 328	6	MRC.0.30 M30 Hm Decor AOV 301+ Dollars 0-12M
+BUYA.MRC.0.30	329	 329	1	MRC.0.30 M30 Hm Decor AOV 301+ BuyerID 0-12M
+TRN_C.MRC.0.30	330	 332	3	MRC.0.30 M30 Hm Decor AOV 301+ Trans 0-36M
+DOL_C.MRC.0.30	333	 338	6	MRC.0.30 M30 Hm Decor AOV 301+ Dollars 0-36M
+BUY_C.MRC.0.30	339	 339	1	MRC.0.30 M30 Hm Decor AOV 301+ BuyerID 0-36M
+BUYL.MRC.0.31	340	 340	1	MRC.0.31 M31 Hm Fixtures/Furnish BuyerID Life
+TRNL.MRC.0.31	341	 343	3	MRC.0.31 M31 Hm Fixtures/Furnish Trans Life
+DOLL.MRC.0.31	344	 349	6	MRC.0.31 M31 Hm Fixtures/Furnish Dollars Life
+RECL.MRC.0.31	350	 355	6	MRC.0.31 M31 Hm Fixtures/Furnish Recency
+TRNA.MRC.0.31	356	 358	3	MRC.0.31 M31 Hm Fixtures/Furnish Trans 0-12M
+DOLA.MRC.0.31	359	 364	6	MRC.0.31 M31 Hm Fixtures/Furnish Dollars 0-12M
+BUYA.MRC.0.31	365	 365	1	MRC.0.31 M31 Hm Fixtures/Furnish BuyerID 0-12M
+TRN_C.MRC.0.31	366	 368	3	MRC.0.31 M31 Hm Fixtures/Furnish Trans 0-36M
+DOL_C.MRC.0.31	369	 374	6	MRC.0.31 M31 Hm Fixtures/Furnish Dollars 0-36M
+BUY_C.MRC.0.31	375	 375	1	MRC.0.31 M31 Hm Fixtures/Furnish BuyerID 0-36M
+BUYL.MRC.0.32	376	 376	1	MRC.0.32 M32 Mdrn/cntmpo Dec/Gfts BuyerID Life
+TRNL.MRC.0.32	377	 379	3	MRC.0.32 M32 Mdrn/cntmpo Dec/Gfts Trans Life
+DOLL.MRC.0.32	380	 385	6	MRC.0.32 M32 Mdrn/cntmpo Dec/Gfts Dollars Life
+RECL.MRC.0.32	386	 391	6	MRC.0.32 M32 Mdrn/cntmpo Dec/Gfts Recency
+TRNA.MRC.0.32	392	 394	3	MRC.0.32 M32 Mdrn/cntmpo Dec/Gfts Trans 0-12M
+DOLA.MRC.0.32	395	 400	6	MRC.0.32 M32 Mdrn/cntmpo Dec/Gfts Dollars 0-12M
+BUYA.MRC.0.32	401	 401	1	MRC.0.32 M32 Mdrn/cntmpo Dec/Gfts BuyerID 0-12M
+TRN_C.MRC.0.32	402	 404	3	MRC.0.32 M32 Mdrn/cntmpo Dec/Gfts Trans 0-36M
+DOL_C.MRC.0.32	405	 410	6	MRC.0.32 M32 Mdrn/cntmpo Dec/Gfts Dollars 0-36M
+BUY_C.MRC.0.32	411	 411	1	MRC.0.32 M32 Mdrn/cntmpo Dec/Gfts BuyerID 0-36M
+BUYL.MRC.0.33	412	 412	1	MRC.0.33 M33 Country Hm Dec/Gfts BuyerID Life
+TRNL.MRC.0.33	413	 415	3	MRC.0.33 M33 Country Hm Dec/Gfts Trans Life
+DOLL.MRC.0.33	416	 421	6	MRC.0.33 M33 Country Hm Dec/Gfts Dollars Life
+RECL.MRC.0.33	422	 427	6	MRC.0.33 M33 Country Hm Dec/Gfts Recency
+TRNA.MRC.0.33	428	 430	3	MRC.0.33 M33 Country Hm Dec/Gfts Trans 0-12M
+DOLA.MRC.0.33	431	 436	6	MRC.0.33 M33 Country Hm Dec/Gfts Dollars 0-12M
+BUYA.MRC.0.33	437	 437	1	MRC.0.33 M33 Country Hm Dec/Gfts BuyerID 0-12M
+TRN_C.MRC.0.33	438	 440	3	MRC.0.33 M33 Country Hm Dec/Gfts Trans 0-36M
+DOL_C.MRC.0.33	441	 446	6	MRC.0.33 M33 Country Hm Dec/Gfts Dollars 0-36M
+BUY_C.MRC.0.33	447	 447	1	MRC.0.33 M33 Country Hm Dec/Gfts BuyerID 0-36M
+BUYL.MRC.0.34	448	 448	1	MRC.0.34 M34 Bed Bath & Linens BuyerID Life
+TRNL.MRC.0.34	449	 451	3	MRC.0.34 M34 Bed Bath & Linens Trans Life
+DOLL.MRC.0.34	452	 457	6	MRC.0.34 M34 Bed Bath & Linens Dollars Life
+RECL.MRC.0.34	458	 463	6	MRC.0.34 M34 Bed Bath & Linens Recency
+TRNA.MRC.0.34	464	 466	3	MRC.0.34 M34 Bed Bath & Linens Trans 0-12M
+DOLA.MRC.0.34	467	 472	6	MRC.0.34 M34 Bed Bath & Linens Dollars 0-12M
+BUYA.MRC.0.34	473	 473	1	MRC.0.34 M34 Bed Bath & Linens BuyerID 0-12M
+TRN_C.MRC.0.34	474	 476	3	MRC.0.34 M34 Bed Bath & Linens Trans 0-36M
+DOL_C.MRC.0.34	477	 482	6	MRC.0.34 M34 Bed Bath & Linens Dollars 0-36M
+BUY_C.MRC.0.34	483	 483	1	MRC.0.34 M34 Bed Bath & Linens BuyerID 0-36M
+BUYL.MRC.0.35	484	 484	1	MRC.0.35 M35 Home Org/Gadgets BuyerID Life
+TRNL.MRC.0.35	485	 487	3	MRC.0.35 M35 Home Org/Gadgets Trans Life
+DOLL.MRC.0.35	488	 493	6	MRC.0.35 M35 Home Org/Gadgets Dollars Life
+RECL.MRC.0.35	494	 499	6	MRC.0.35 M35 Home Org/Gadgets Recency
+TRNA.MRC.0.35	500	 502	3	MRC.0.35 M35 Home Org/Gadgets Trans 0-12M
+DOLA.MRC.0.35	503	 508	6	MRC.0.35 M35 Home Org/Gadgets Dollars 0-12M
+BUYA.MRC.0.35	509	 509	1	MRC.0.35 M35 Home Org/Gadgets BuyerID 0-12M
+TRN_C.MRC.0.35	510	 512	3	MRC.0.35 M35 Home Org/Gadgets Trans 0-36M
+DOL_C.MRC.0.35	513	 518	6	MRC.0.35 M35 Home Org/Gadgets Dollars 0-36M
+BUY_C.MRC.0.35	519	 519	1	MRC.0.35 M35 Home Org/Gadgets BuyerID 0-36M
+BUYL.MRC.0.36	520	 520	1	MRC.0.36 M36 Kitchen Accs/Decor BuyerID Life
+TRNL.MRC.0.36	521	 523	3	MRC.0.36 M36 Kitchen Accs/Decor Trans Life
+DOLL.MRC.0.36	524	 529	6	MRC.0.36 M36 Kitchen Accs/Decor Dollars Life
+RECL.MRC.0.36	530	 535	6	MRC.0.36 M36 Kitchen Accs/Decor Recency
+TRNA.MRC.0.36	536	 538	3	MRC.0.36 M36 Kitchen Accs/Decor Trans 0-12M
+DOLA.MRC.0.36	539	 544	6	MRC.0.36 M36 Kitchen Accs/Decor Dollars 0-12M
+BUYA.MRC.0.36	545	 545	1	MRC.0.36 M36 Kitchen Accs/Decor BuyerID 0-12M
+TRN_C.MRC.0.36	546	 548	3	MRC.0.36 M36 Kitchen Accs/Decor Trans 0-36M
+DOL_C.MRC.0.36	549	 554	6	MRC.0.36 M36 Kitchen Accs/Decor Dollars 0-36M
+BUY_C.MRC.0.36	555	 555	1	MRC.0.36 M36 Kitchen Accs/Decor BuyerID 0-36M
+BUYL.MRC.0.37	556	 556	1	MRC.0.37 M37 L/M-tkt Beauty/Spa BuyerID Life
+TRNL.MRC.0.37	557	 559	3	MRC.0.37 M37 L/M-tkt Beauty/Spa Trans Life
+DOLL.MRC.0.37	560	 565	6	MRC.0.37 M37 L/M-tkt Beauty/Spa Dollars Life
+RECL.MRC.0.37	566	 571	6	MRC.0.37 M37 L/M-tkt Beauty/Spa Recency
+TRNA.MRC.0.37	572	 574	3	MRC.0.37 M37 L/M-tkt Beauty/Spa Trans 0-12M
+DOLA.MRC.0.37	575	 580	6	MRC.0.37 M37 L/M-tkt Beauty/Spa Dollars 0-12M
+BUYA.MRC.0.37	581	 581	1	MRC.0.37 M37 L/M-tkt Beauty/Spa BuyerID 0-12M
+TRN_C.MRC.0.37	582	 584	3	MRC.0.37 M37 L/M-tkt Beauty/Spa Trans 0-36M
+DOL_C.MRC.0.37	585	 590	6	MRC.0.37 M37 L/M-tkt Beauty/Spa Dollars 0-36M
+BUY_C.MRC.0.37	591	 591	1	MRC.0.37 M37 L/M-tkt Beauty/Spa BuyerID 0-36M
+BUYL.MRC.0.38	592	 592	1	MRC.0.38 M38 High-tkt Beauty/Spa BuyerID Life
+TRNL.MRC.0.38	593	 595	3	MRC.0.38 M38 High-tkt Beauty/Spa Trans Life
+DOLL.MRC.0.38	596	 601	6	MRC.0.38 M38 High-tkt Beauty/Spa Dollars Life
+RECL.MRC.0.38	602	 607	6	MRC.0.38 M38 High-tkt Beauty/Spa Recency
+TRNA.MRC.0.38	608	 610	3	MRC.0.38 M38 High-tkt Beauty/Spa Trans 0-12M
+DOLA.MRC.0.38	611	 616	6	MRC.0.38 M38 High-tkt Beauty/Spa Dollars 0-12M
+BUYA.MRC.0.38	617	 617	1	MRC.0.38 M38 High-tkt Beauty/Spa BuyerID 0-12M
+TRN_C.MRC.0.38	618	 620	3	MRC.0.38 M38 High-tkt Beauty/Spa Trans 0-36M
+DOL_C.MRC.0.38	621	 626	6	MRC.0.38 M38 High-tkt Beauty/Spa Dollars 0-36M
+BUY_C.MRC.0.38	627	 627	1	MRC.0.38 M38 High-tkt Beauty/Spa BuyerID 0-36M
+BUYL.MRC.0.39	628	 628	1	MRC.0.39 M39 Hunting / Fishing BuyerID Life
+TRNL.MRC.0.39	629	 631	3	MRC.0.39 M39 Hunting / Fishing Trans Life
+DOLL.MRC.0.39	632	 637	6	MRC.0.39 M39 Hunting / Fishing Dollars Life
+RECL.MRC.0.39	638	 643	6	MRC.0.39 M39 Hunting / Fishing Recency
+TRNA.MRC.0.39	644	 646	3	MRC.0.39 M39 Hunting / Fishing Trans 0-12M
+DOLA.MRC.0.39	647	 652	6	MRC.0.39 M39 Hunting / Fishing Dollars 0-12M
+BUYA.MRC.0.39	653	 653	1	MRC.0.39 M39 Hunting / Fishing BuyerID 0-12M
+TRN_C.MRC.0.39	654	 656	3	MRC.0.39 M39 Hunting / Fishing Trans 0-36M
+DOL_C.MRC.0.39	657	 662	6	MRC.0.39 M39 Hunting / Fishing Dollars 0-36M
+BUY_C.MRC.0.39	663	 663	1	MRC.0.39 M39 Hunting / Fishing BuyerID 0-36M
+BUYL.MRC.0.40	664	 664	1	MRC.0.40 M40 Rec / Outdoor BuyerID Life
+TRNL.MRC.0.40	665	 667	3	MRC.0.40 M40 Rec / Outdoor Trans Life
+DOLL.MRC.0.40	668	 673	6	MRC.0.40 M40 Rec / Outdoor Dollars Life
+RECL.MRC.0.40	674	 679	6	MRC.0.40 M40 Rec / Outdoor Recency
+TRNA.MRC.0.40	680	 682	3	MRC.0.40 M40 Rec / Outdoor Trans 0-12M
+DOLA.MRC.0.40	683	 688	6	MRC.0.40 M40 Rec / Outdoor Dollars 0-12M
+BUYA.MRC.0.40	689	 689	1	MRC.0.40 M40 Rec / Outdoor BuyerID 0-12M
+TRN_C.MRC.0.40	690	 692	3	MRC.0.40 M40 Rec / Outdoor Trans 0-36M
+DOL_C.MRC.0.40	693	 698	6	MRC.0.40 M40 Rec / Outdoor Dollars 0-36M
+BUY_C.MRC.0.40	699	 699	1	MRC.0.40 M40 Rec / Outdoor BuyerID 0-36M
+BUYL.MRC.0.41	700	 700	1	MRC.0.41 M41 Activewear BuyerID Life
+TRNL.MRC.0.41	701	 703	3	MRC.0.41 M41 Activewear Trans Life
+DOLL.MRC.0.41	704	 709	6	MRC.0.41 M41 Activewear Dollars Life
+RECL.MRC.0.41	710	 715	6	MRC.0.41 M41 Activewear Recency
+TRNA.MRC.0.41	716	 718	3	MRC.0.41 M41 Activewear Trans 0-12M
+DOLA.MRC.0.41	719	 724	6	MRC.0.41 M41 Activewear Dollars 0-12M
+BUYA.MRC.0.41	725	 725	1	MRC.0.41 M41 Activewear BuyerID 0-12M
+TRN_C.MRC.0.41	726	 728	3	MRC.0.41 M41 Activewear Trans 0-36M
+DOL_C.MRC.0.41	729	 734	6	MRC.0.41 M41 Activewear Dollars 0-36M
+BUY_C.MRC.0.41	735	 735	1	MRC.0.41 M41 Activewear BuyerID 0-36M
+BUYL.MRC.0.42	736	 736	1	MRC.0.42 M42 Sporting Goods BuyerID Life
+TRNL.MRC.0.42	737	 739	3	MRC.0.42 M42 Sporting Goods Trans Life
+DOLL.MRC.0.42	740	 745	6	MRC.0.42 M42 Sporting Goods Dollars Life
+RECL.MRC.0.42	746	 751	6	MRC.0.42 M42 Sporting Goods Recency
+TRNA.MRC.0.42	752	 754	3	MRC.0.42 M42 Sporting Goods Trans 0-12M
+DOLA.MRC.0.42	755	 760	6	MRC.0.42 M42 Sporting Goods Dollars 0-12M
+BUYA.MRC.0.42	761	 761	1	MRC.0.42 M42 Sporting Goods BuyerID 0-12M
+TRN_C.MRC.0.42	762	 764	3	MRC.0.42 M42 Sporting Goods Trans 0-36M
+DOL_C.MRC.0.42	765	 770	6	MRC.0.42 M42 Sporting Goods Dollars 0-36M
+BUY_C.MRC.0.42	771	 771	1	MRC.0.42 M42 Sporting Goods BuyerID 0-36M
+BUYL.MRC.0.43	772	 772	1	MRC.0.43 M43 Low-tkt Gifts/Merch BuyerID Life
+TRNL.MRC.0.43	773	 775	3	MRC.0.43 M43 Low-tkt Gifts/Merch Trans Life
+DOLL.MRC.0.43	776	 781	6	MRC.0.43 M43 Low-tkt Gifts/Merch Dollars Life
+RECL.MRC.0.43	782	 787	6	MRC.0.43 M43 Low-tkt Gifts/Merch Recency
+TRNA.MRC.0.43	788	 790	3	MRC.0.43 M43 Low-tkt Gifts/Merch Trans 0-12M
+DOLA.MRC.0.43	791	 796	6	MRC.0.43 M43 Low-tkt Gifts/Merch Dollars 0-12M
+BUYA.MRC.0.43	797	 797	1	MRC.0.43 M43 Low-tkt Gifts/Merch BuyerID 0-12M
+TRN_C.MRC.0.43	798	 800	3	MRC.0.43 M43 Low-tkt Gifts/Merch Trans 0-36M
+DOL_C.MRC.0.43	801	 806	6	MRC.0.43 M43 Low-tkt Gifts/Merch Dollars 0-36M
+BUY_C.MRC.0.43	807	 807	1	MRC.0.43 M43 Low-tkt Gifts/Merch BuyerID 0-36M
+BUYL.MRC.0.44	808	 808	1	MRC.0.44 M44 Mid-tkt Gifts/Merch BuyerID Life
+TRNL.MRC.0.44	809	 811	3	MRC.0.44 M44 Mid-tkt Gifts/Merch Trans Life
+DOLL.MRC.0.44	812	 817	6	MRC.0.44 M44 Mid-tkt Gifts/Merch Dollars Life
+RECL.MRC.0.44	818	 823	6	MRC.0.44 M44 Mid-tkt Gifts/Merch Recency
+TRNA.MRC.0.44	824	 826	3	MRC.0.44 M44 Mid-tkt Gifts/Merch Trans 0-12M
+DOLA.MRC.0.44	827	 832	6	MRC.0.44 M44 Mid-tkt Gifts/Merch Dollars 0-12M
+BUYA.MRC.0.44	833	 833	1	MRC.0.44 M44 Mid-tkt Gifts/Merch BuyerID 0-12M
+TRN_C.MRC.0.44	834	 836	3	MRC.0.44 M44 Mid-tkt Gifts/Merch Trans 0-36M
+DOL_C.MRC.0.44	837	 842	6	MRC.0.44 M44 Mid-tkt Gifts/Merch Dollars 0-36M
+BUY_C.MRC.0.44	843	 843	1	MRC.0.44 M44 Mid-tkt Gifts/Merch BuyerID 0-36M
+BUYL.MRC.0.45	844	 844	1	MRC.0.45 M45 High-tkt Gifts/Merch BuyerID Life
+TRNL.MRC.0.45	845	 847	3	MRC.0.45 M45 High-tkt Gifts/Merch Trans Life
+DOLL.MRC.0.45	848	 853	6	MRC.0.45 M45 High-tkt Gifts/Merch Dollars Life
+RECL.MRC.0.45	854	 859	6	MRC.0.45 M45 High-tkt Gifts/Merch Recency
+TRNA.MRC.0.45	860	 862	3	MRC.0.45 M45 High-tkt Gifts/Merch Trans 0-12M
+DOLA.MRC.0.45	863	 868	6	MRC.0.45 M45 High-tkt Gifts/Merch Dollars 0-12M
+BUYA.MRC.0.45	869	 869	1	MRC.0.45 M45 High-tkt Gifts/Merch BuyerID 0-12M
+TRN_C.MRC.0.45	870	 872	3	MRC.0.45 M45 High-tkt Gifts/Merch Trans 0-36M
+DOL_C.MRC.0.45	873	 878	6	MRC.0.45 M45 High-tkt Gifts/Merch Dollars 0-36M
+BUY_C.MRC.0.45	879	 879	1	MRC.0.45 M45 High-tkt Gifts/Merch BuyerID 0-36M
+BUYL.MRC.0.46	880	 880	1	MRC.0.46 M46 Environmntl/New Age BuyerID Life
+TRNL.MRC.0.46	881	 883	3	MRC.0.46 M46 Environmntl/New Age Trans Life
+DOLL.MRC.0.46	884	 889	6	MRC.0.46 M46 Environmntl/New Age Dollars Life
+RECL.MRC.0.46	890	 895	6	MRC.0.46 M46 Environmntl/New Age Recency
+TRNA.MRC.0.46	896	 898	3	MRC.0.46 M46 Environmntl/New Age Trans 0-12M
+DOLA.MRC.0.46	899	 904	6	MRC.0.46 M46 Environmntl/New Age Dollars 0-12M
+BUYA.MRC.0.46	905	 905	1	MRC.0.46 M46 Environmntl/New Age BuyerID 0-12M
+TRN_C.MRC.0.46	906	 908	3	MRC.0.46 M46 Environmntl/New Age Trans 0-36M
+DOL_C.MRC.0.46	909	 914	6	MRC.0.46 M46 Environmntl/New Age Dollars 0-36M
+BUY_C.MRC.0.46	915	 915	1	MRC.0.46 M46 Environmntl/New Age BuyerID 0-36M
+BUYL.MRC.0.47	916	 916	1	MRC.0.47 M47 Discount Dmstc Merch BuyerID Life
+TRNL.MRC.0.47	917	 919	3	MRC.0.47 M47 Discount Dmstc Merch Trans Life
+DOLL.MRC.0.47	920	 925	6	MRC.0.47 M47 Discount Dmstc Merch Dollars Life
+RECL.MRC.0.47	926	 931	6	MRC.0.47 M47 Discount Dmstc Merch Recency
+TRNA.MRC.0.47	932	 934	3	MRC.0.47 M47 Discount Dmstc Merch Trans 0-12M
+DOLA.MRC.0.47	935	 940	6	MRC.0.47 M47 Discount Dmstc Merch Dollars 0-12M
+BUYA.MRC.0.47	941	 941	1	MRC.0.47 M47 Discount Dmstc Merch BuyerID 0-12M
+TRN_C.MRC.0.47	942	 944	3	MRC.0.47 M47 Discount Dmstc Merch Trans 0-36M
+DOL_C.MRC.0.47	945	 950	6	MRC.0.47 M47 Discount Dmstc Merch Dollars 0-36M
+BUY_C.MRC.0.47	951	 951	1	MRC.0.47 M47 Discount Dmstc Merch BuyerID 0-36M
+BUYL.MRC.0.48	952	 952	1	MRC.0.48 M48 Garage/Shop Supplies BuyerID Life
+TRNL.MRC.0.48	953	 955	3	MRC.0.48 M48 Garage/Shop Supplies Trans Life
+DOLL.MRC.0.48	956	 961	6	MRC.0.48 M48 Garage/Shop Supplies Dollars Life
+RECL.MRC.0.48	962	 967	6	MRC.0.48 M48 Garage/Shop Supplies Recency
+TRNA.MRC.0.48	968	 970	3	MRC.0.48 M48 Garage/Shop Supplies Trans 0-12M
+DOLA.MRC.0.48	971	 976	6	MRC.0.48 M48 Garage/Shop Supplies Dollars 0-12M
+BUYA.MRC.0.48	977	 977	1	MRC.0.48 M48 Garage/Shop Supplies BuyerID 0-12M
+TRN_C.MRC.0.48	978	 980	3	MRC.0.48 M48 Garage/Shop Supplies Trans 0-36M
+DOL_C.MRC.0.48	981	 986	6	MRC.0.48 M48 Garage/Shop Supplies Dollars 0-36M
+BUY_C.MRC.0.48	987	 987	1	MRC.0.48 M48 Garage/Shop Supplies BuyerID 0-36M
+BUYL.MRC.0.49	988	 988	1	MRC.0.49 M49 Electronics Gft/Gdgt BuyerID Life
+TRNL.MRC.0.49	989	 991	3	MRC.0.49 M49 Electronics Gft/Gdgt Trans Life
+DOLL.MRC.0.49	992	 997	6	MRC.0.49 M49 Electronics Gft/Gdgt Dollars Life
+RECL.MRC.0.49	998	1003	6	MRC.0.49 M49 Electronics Gft/Gdgt Recency
+TRNA.MRC.0.49	1004	1006	3	MRC.0.49 M49 Electronics Gft/Gdgt Trans 0-12M
+DOLA.MRC.0.49	1007	1012	6	MRC.0.49 M49 Electronics Gft/Gdgt Dollars 0-12M
+BUYA.MRC.0.49	1013	1013	1	MRC.0.49 M49 Electronics Gft/Gdgt BuyerID 0-12M
+TRN_C.MRC.0.49	1014	1016	3	MRC.0.49 M49 Electronics Gft/Gdgt Trans 0-36M
+DOL_C.MRC.0.49	1017	1022	6	MRC.0.49 M49 Electronics Gft/Gdgt Dollars 0-36M
+BUY_C.MRC.0.49	1023	1023	1	MRC.0.49 M49 Electronics Gft/Gdgt BuyerID 0-36M
+BUYL.MRC.0.50	1024	1024	1	MRC.0.50 M50 Gardening Tools/Supp BuyerID Life
+TRNL.MRC.0.50	1025	1027	3	MRC.0.50 M50 Gardening Tools/Supp Trans Life
+DOLL.MRC.0.50	1028	1033	6	MRC.0.50 M50 Gardening Tools/Supp Dollars Life
+RECL.MRC.0.50	1034	1039	6	MRC.0.50 M50 Gardening Tools/Supp Recency
+TRNA.MRC.0.50	1040	1042	3	MRC.0.50 M50 Gardening Tools/Supp Trans 0-12M
+DOLA.MRC.0.50	1043	1048	6	MRC.0.50 M50 Gardening Tools/Supp Dollars 0-12M
+BUYA.MRC.0.50	1049	1049	1	MRC.0.50 M50 Gardening Tools/Supp BuyerID 0-12M
+TRN_C.MRC.0.50	1050	1052	3	MRC.0.50 M50 Gardening Tools/Supp Trans 0-36M
+DOL_C.MRC.0.50	1053	1058	6	MRC.0.50 M50 Gardening Tools/Supp Dollars 0-36M
+BUY_C.MRC.0.50	1059	1059	1	MRC.0.50 M50 Gardening Tools/Supp BuyerID 0-36M
+BUYL.MRC.0.51	1060	1060	1	MRC.0.51 M51 Patio/Yard Dec/Furn BuyerID Life
+TRNL.MRC.0.51	1061	1063	3	MRC.0.51 M51 Patio/Yard Dec/Furn Trans Life
+DOLL.MRC.0.51	1064	1069	6	MRC.0.51 M51 Patio/Yard Dec/Furn Dollars Life
+RECL.MRC.0.51	1070	1075	6	MRC.0.51 M51 Patio/Yard Dec/Furn Recency
+TRNA.MRC.0.51	1076	1078	3	MRC.0.51 M51 Patio/Yard Dec/Furn Trans 0-12M
+DOLA.MRC.0.51	1079	1084	6	MRC.0.51 M51 Patio/Yard Dec/Furn Dollars 0-12M
+BUYA.MRC.0.51	1085	1085	1	MRC.0.51 M51 Patio/Yard Dec/Furn BuyerID 0-12M
+TRN_C.MRC.0.51	1086	1088	3	MRC.0.51 M51 Patio/Yard Dec/Furn Trans 0-36M
+DOL_C.MRC.0.51	1089	1094	6	MRC.0.51 M51 Patio/Yard Dec/Furn Dollars 0-36M
+BUY_C.MRC.0.51	1095	1095	1	MRC.0.51 M51 Patio/Yard Dec/Furn BuyerID 0-36M
+BUYL.MRC.0.52	1096	1096	1	MRC.0.52 M52 Seeds/Bulbs/Lv Plnts BuyerID Life
+TRNL.MRC.0.52	1097	1099	3	MRC.0.52 M52 Seeds/Bulbs/Lv Plnts Trans Life
+DOLL.MRC.0.52	1100	1105	6	MRC.0.52 M52 Seeds/Bulbs/Lv Plnts Dollars Life
+RECL.MRC.0.52	1106	1111	6	MRC.0.52 M52 Seeds/Bulbs/Lv Plnts Recency
+TRNA.MRC.0.52	1112	1114	3	MRC.0.52 M52 Seeds/Bulbs/Lv Plnts Trans 0-12M
+DOLA.MRC.0.52	1115	1120	6	MRC.0.52 M52 Seeds/Bulbs/Lv Plnts Dollars 0-12M
+BUYA.MRC.0.52	1121	1121	1	MRC.0.52 M52 Seeds/Bulbs/Lv Plnts BuyerID 0-12M
+TRN_C.MRC.0.52	1122	1124	3	MRC.0.52 M52 Seeds/Bulbs/Lv Plnts Trans 0-36M
+DOL_C.MRC.0.52	1125	1130	6	MRC.0.52 M52 Seeds/Bulbs/Lv Plnts Dollars 0-36M
+BUY_C.MRC.0.52	1131	1131	1	MRC.0.52 M52 Seeds/Bulbs/Lv Plnts BuyerID 0-36M
+BUYL.MRC.0.53	1132	1132	1	MRC.0.53 M53 Horse Enthus/Wstrnwr BuyerID Life
+TRNL.MRC.0.53	1133	1135	3	MRC.0.53 M53 Horse Enthus/Wstrnwr Trans Life
+DOLL.MRC.0.53	1136	1141	6	MRC.0.53 M53 Horse Enthus/Wstrnwr Dollars Life
+RECL.MRC.0.53	1142	1147	6	MRC.0.53 M53 Horse Enthus/Wstrnwr Recency
+TRNA.MRC.0.53	1148	1150	3	MRC.0.53 M53 Horse Enthus/Wstrnwr Trans 0-12M
+DOLA.MRC.0.53	1151	1156	6	MRC.0.53 M53 Horse Enthus/Wstrnwr Dollars 0-12M
+BUYA.MRC.0.53	1157	1157	1	MRC.0.53 M53 Horse Enthus/Wstrnwr BuyerID 0-12M
+TRN_C.MRC.0.53	1158	1160	3	MRC.0.53 M53 Horse Enthus/Wstrnwr Trans 0-36M
+DOL_C.MRC.0.53	1161	1166	6	MRC.0.53 M53 Horse Enthus/Wstrnwr Dollars 0-36M
+BUY_C.MRC.0.53	1167	1167	1	MRC.0.53 M53 Horse Enthus/Wstrnwr BuyerID 0-36M
+BUYL.MRC.0.54	1168	1168	1	MRC.0.54 M54 Pet Supp/Publishing BuyerID Life
+TRNL.MRC.0.54	1169	1171	3	MRC.0.54 M54 Pet Supp/Publishing Trans Life
+DOLL.MRC.0.54	1172	1177	6	MRC.0.54 M54 Pet Supp/Publishing Dollars Life
+RECL.MRC.0.54	1178	1183	6	MRC.0.54 M54 Pet Supp/Publishing Recency
+TRNA.MRC.0.54	1184	1186	3	MRC.0.54 M54 Pet Supp/Publishing Trans 0-12M
+DOLA.MRC.0.54	1187	1192	6	MRC.0.54 M54 Pet Supp/Publishing Dollars 0-12M
+BUYA.MRC.0.54	1193	1193	1	MRC.0.54 M54 Pet Supp/Publishing BuyerID 0-12M
+TRN_C.MRC.0.54	1194	1196	3	MRC.0.54 M54 Pet Supp/Publishing Trans 0-36M
+DOL_C.MRC.0.54	1197	1202	6	MRC.0.54 M54 Pet Supp/Publishing Dollars 0-36M
+BUY_C.MRC.0.54	1203	1203	1	MRC.0.54 M54 Pet Supp/Publishing BuyerID 0-36M
+BUYL.MRC.0.55	1204	1204	1	MRC.0.55 M55 Cakes / Breads BuyerID Life
+TRNL.MRC.0.55	1205	1207	3	MRC.0.55 M55 Cakes / Breads Trans Life
+DOLL.MRC.0.55	1208	1213	6	MRC.0.55 M55 Cakes / Breads Dollars Life
+RECL.MRC.0.55	1214	1219	6	MRC.0.55 M55 Cakes / Breads Recency
+TRNA.MRC.0.55	1220	1222	3	MRC.0.55 M55 Cakes / Breads Trans 0-12M
+DOLA.MRC.0.55	1223	1228	6	MRC.0.55 M55 Cakes / Breads Dollars 0-12M
+BUYA.MRC.0.55	1229	1229	1	MRC.0.55 M55 Cakes / Breads BuyerID 0-12M
+TRN_C.MRC.0.55	1230	1232	3	MRC.0.55 M55 Cakes / Breads Trans 0-36M
+DOL_C.MRC.0.55	1233	1238	6	MRC.0.55 M55 Cakes / Breads Dollars 0-36M
+BUY_C.MRC.0.55	1239	1239	1	MRC.0.55 M55 Cakes / Breads BuyerID 0-36M
+BUYL.MRC.0.56	1240	1240	1	MRC.0.56 M56 Chocolates/Confctns BuyerID Life
+TRNL.MRC.0.56	1241	1243	3	MRC.0.56 M56 Chocolates/Confctns Trans Life
+DOLL.MRC.0.56	1244	1249	6	MRC.0.56 M56 Chocolates/Confctns Dollars Life
+RECL.MRC.0.56	1250	1255	6	MRC.0.56 M56 Chocolates/Confctns Recency
+TRNA.MRC.0.56	1256	1258	3	MRC.0.56 M56 Chocolates/Confctns Trans 0-12M
+DOLA.MRC.0.56	1259	1264	6	MRC.0.56 M56 Chocolates/Confctns Dollars 0-12M
+BUYA.MRC.0.56	1265	1265	1	MRC.0.56 M56 Chocolates/Confctns BuyerID 0-12M
+TRN_C.MRC.0.56	1266	1268	3	MRC.0.56 M56 Chocolates/Confctns Trans 0-36M
+DOL_C.MRC.0.56	1269	1274	6	MRC.0.56 M56 Chocolates/Confctns Dollars 0-36M
+BUY_C.MRC.0.56	1275	1275	1	MRC.0.56 M56 Chocolates/Confctns BuyerID 0-36M
+BUYL.MRC.0.57	1276	1276	1	MRC.0.57 M57 Fruits / Nuts BuyerID Life
+TRNL.MRC.0.57	1277	1279	3	MRC.0.57 M57 Fruits / Nuts Trans Life
+DOLL.MRC.0.57	1280	1285	6	MRC.0.57 M57 Fruits / Nuts Dollars Life
+RECL.MRC.0.57	1286	1291	6	MRC.0.57 M57 Fruits / Nuts Recency
+TRNA.MRC.0.57	1292	1294	3	MRC.0.57 M57 Fruits / Nuts Trans 0-12M
+DOLA.MRC.0.57	1295	1300	6	MRC.0.57 M57 Fruits / Nuts Dollars 0-12M
+BUYA.MRC.0.57	1301	1301	1	MRC.0.57 M57 Fruits / Nuts BuyerID 0-12M
+TRN_C.MRC.0.57	1302	1304	3	MRC.0.57 M57 Fruits / Nuts Trans 0-36M
+DOL_C.MRC.0.57	1305	1310	6	MRC.0.57 M57 Fruits / Nuts Dollars 0-36M
+BUY_C.MRC.0.57	1311	1311	1	MRC.0.57 M57 Fruits / Nuts BuyerID 0-36M
+BUYL.MRC.0.58	1312	1312	1	MRC.0.58 M58 Meats / Seafood BuyerID Life
+TRNL.MRC.0.58	1313	1315	3	MRC.0.58 M58 Meats / Seafood Trans Life
+DOLL.MRC.0.58	1316	1321	6	MRC.0.58 M58 Meats / Seafood Dollars Life
+RECL.MRC.0.58	1322	1327	6	MRC.0.58 M58 Meats / Seafood Recency
+TRNA.MRC.0.58	1328	1330	3	MRC.0.58 M58 Meats / Seafood Trans 0-12M
+DOLA.MRC.0.58	1331	1336	6	MRC.0.58 M58 Meats / Seafood Dollars 0-12M
+BUYA.MRC.0.58	1337	1337	1	MRC.0.58 M58 Meats / Seafood BuyerID 0-12M
+TRN_C.MRC.0.58	1338	1340	3	MRC.0.58 M58 Meats / Seafood Trans 0-36M
+DOL_C.MRC.0.58	1341	1346	6	MRC.0.58 M58 Meats / Seafood Dollars 0-36M
+BUY_C.MRC.0.58	1347	1347	1	MRC.0.58 M58 Meats / Seafood BuyerID 0-36M
+BUYL.MRC.0.59	1348	1348	1	MRC.0.59 M59 Spclty Foods/Spices BuyerID Life
+TRNL.MRC.0.59	1349	1351	3	MRC.0.59 M59 Spclty Foods/Spices Trans Life
+DOLL.MRC.0.59	1352	1357	6	MRC.0.59 M59 Spclty Foods/Spices Dollars Life
+RECL.MRC.0.59	1358	1363	6	MRC.0.59 M59 Spclty Foods/Spices Recency
+TRNA.MRC.0.59	1364	1366	3	MRC.0.59 M59 Spclty Foods/Spices Trans 0-12M
+DOLA.MRC.0.59	1367	1372	6	MRC.0.59 M59 Spclty Foods/Spices Dollars 0-12M
+BUYA.MRC.0.59	1373	1373	1	MRC.0.59 M59 Spclty Foods/Spices BuyerID 0-12M
+TRN_C.MRC.0.59	1374	1376	3	MRC.0.59 M59 Spclty Foods/Spices Trans 0-36M
+DOL_C.MRC.0.59	1377	1382	6	MRC.0.59 M59 Spclty Foods/Spices Dollars 0-36M
+BUY_C.MRC.0.59	1383	1383	1	MRC.0.59 M59 Spclty Foods/Spices BuyerID 0-36M
+BUYL.MRC.0.60	1384	1384	1	MRC.0.60 M60 Wines/Accessories BuyerID Life
+TRNL.MRC.0.60	1385	1387	3	MRC.0.60 M60 Wines/Accessories Trans Life
+DOLL.MRC.0.60	1388	1393	6	MRC.0.60 M60 Wines/Accessories Dollars Life
+RECL.MRC.0.60	1394	1399	6	MRC.0.60 M60 Wines/Accessories Recency
+TRNA.MRC.0.60	1400	1402	3	MRC.0.60 M60 Wines/Accessories Trans 0-12M
+DOLA.MRC.0.60	1403	1408	6	MRC.0.60 M60 Wines/Accessories Dollars 0-12M
+BUYA.MRC.0.60	1409	1409	1	MRC.0.60 M60 Wines/Accessories BuyerID 0-12M
+TRN_C.MRC.0.60	1410	1412	3	MRC.0.60 M60 Wines/Accessories Trans 0-36M
+DOL_C.MRC.0.60	1413	1418	6	MRC.0.60 M60 Wines/Accessories Dollars 0-36M
+BUY_C.MRC.0.60	1419	1419	1	MRC.0.60 M60 Wines/Accessories BuyerID 0-36M
+BUYL.MRC.0.61	1420	1420	1	MRC.0.61 M61 Arts/Crafts/Statnry BuyerID Life
+TRNL.MRC.0.61	1421	1423	3	MRC.0.61 M61 Arts/Crafts/Statnry Trans Life
+DOLL.MRC.0.61	1424	1429	6	MRC.0.61 M61 Arts/Crafts/Statnry Dollars Life
+RECL.MRC.0.61	1430	1435	6	MRC.0.61 M61 Arts/Crafts/Statnry Recency
+TRNA.MRC.0.61	1436	1438	3	MRC.0.61 M61 Arts/Crafts/Statnry Trans 0-12M
+DOLA.MRC.0.61	1439	1444	6	MRC.0.61 M61 Arts/Crafts/Statnry Dollars 0-12M
+BUYA.MRC.0.61	1445	1445	1	MRC.0.61 M61 Arts/Crafts/Statnry BuyerID 0-12M
+TRN_C.MRC.0.61	1446	1448	3	MRC.0.61 M61 Arts/Crafts/Statnry Trans 0-36M
+DOL_C.MRC.0.61	1449	1454	6	MRC.0.61 M61 Arts/Crafts/Statnry Dollars 0-36M
+BUY_C.MRC.0.61	1455	1455	1	MRC.0.61 M61 Arts/Crafts/Statnry BuyerID 0-36M
+BUYL.MRC.0.62	1456	1456	1	MRC.0.62 M62 Business Supp/Stnry BuyerID Life
+TRNL.MRC.0.62	1457	1459	3	MRC.0.62 M62 Business Supp/Stnry Trans Life
+DOLL.MRC.0.62	1460	1465	6	MRC.0.62 M62 Business Supp/Stnry Dollars Life
+RECL.MRC.0.62	1466	1471	6	MRC.0.62 M62 Business Supp/Stnry Recency
+TRNA.MRC.0.62	1472	1474	3	MRC.0.62 M62 Business Supp/Stnry Trans 0-12M
+DOLA.MRC.0.62	1475	1480	6	MRC.0.62 M62 Business Supp/Stnry Dollars 0-12M
+BUYA.MRC.0.62	1481	1481	1	MRC.0.62 M62 Business Supp/Stnry BuyerID 0-12M
+TRN_C.MRC.0.62	1482	1484	3	MRC.0.62 M62 Business Supp/Stnry Trans 0-36M
+DOL_C.MRC.0.62	1485	1490	6	MRC.0.62 M62 Business Supp/Stnry Dollars 0-36M
+BUY_C.MRC.0.62	1491	1491	1	MRC.0.62 M62 Business Supp/Stnry BuyerID 0-36M
+BUYL.MRC.0.63	1492	1492	1	MRC.0.63 M63 Travel Pkgs/Pubs BuyerID Life
+TRNL.MRC.0.63	1493	1495	3	MRC.0.63 M63 Travel Pkgs/Pubs Trans Life
+DOLL.MRC.0.63	1496	1501	6	MRC.0.63 M63 Travel Pkgs/Pubs Dollars Life
+RECL.MRC.0.63	1502	1507	6	MRC.0.63 M63 Travel Pkgs/Pubs Recency
+TRNA.MRC.0.63	1508	1510	3	MRC.0.63 M63 Travel Pkgs/Pubs Trans 0-12M
+DOLA.MRC.0.63	1511	1516	6	MRC.0.63 M63 Travel Pkgs/Pubs Dollars 0-12M
+BUYA.MRC.0.63	1517	1517	1	MRC.0.63 M63 Travel Pkgs/Pubs BuyerID 0-12M
+TRN_C.MRC.0.63	1518	1520	3	MRC.0.63 M63 Travel Pkgs/Pubs Trans 0-36M
+DOL_C.MRC.0.63	1521	1526	6	MRC.0.63 M63 Travel Pkgs/Pubs Dollars 0-36M
+BUY_C.MRC.0.63	1527	1527	1	MRC.0.63 M63 Travel Pkgs/Pubs BuyerID 0-36M
+BUYL.MRC.0.64	1528	1528	1	MRC.0.64 M64 Collectibles - metal BuyerID Life
+TRNL.MRC.0.64	1529	1531	3	MRC.0.64 M64 Collectibles - metal Trans Life
+DOLL.MRC.0.64	1532	1537	6	MRC.0.64 M64 Collectibles - metal Dollars Life
+RECL.MRC.0.64	1538	1543	6	MRC.0.64 M64 Collectibles - metal Recency
+TRNA.MRC.0.64	1544	1546	3	MRC.0.64 M64 Collectibles - metal Trans 0-12M
+DOLA.MRC.0.64	1547	1552	6	MRC.0.64 M64 Collectibles - metal Dollars 0-12M
+BUYA.MRC.0.64	1553	1553	1	MRC.0.64 M64 Collectibles - metal BuyerID 0-12M
+TRN_C.MRC.0.64	1554	1556	3	MRC.0.64 M64 Collectibles - metal Trans 0-36M
+DOL_C.MRC.0.64	1557	1562	6	MRC.0.64 M64 Collectibles - metal Dollars 0-36M
+BUY_C.MRC.0.64	1563	1563	1	MRC.0.64 M64 Collectibles - metal BuyerID 0-36M
+BUYL.MRC.0.65	1564	1564	1	MRC.0.65 M65 Collectibles BuyerID Life
+TRNL.MRC.0.65	1565	1567	3	MRC.0.65 M65 Collectibles Trans Life
+DOLL.MRC.0.65	1568	1573	6	MRC.0.65 M65 Collectibles Dollars Life
+RECL.MRC.0.65	1574	1579	6	MRC.0.65 M65 Collectibles Recency
+TRNA.MRC.0.65	1580	1582	3	MRC.0.65 M65 Collectibles Trans 0-12M
+DOLA.MRC.0.65	1583	1588	6	MRC.0.65 M65 Collectibles Dollars 0-12M
+BUYA.MRC.0.65	1589	1589	1	MRC.0.65 M65 Collectibles BuyerID 0-12M
+TRN_C.MRC.0.65	1590	1592	3	MRC.0.65 M65 Collectibles Trans 0-36M
+DOL_C.MRC.0.65	1593	1598	6	MRC.0.65 M65 Collectibles Dollars 0-36M
+BUY_C.MRC.0.65	1599	1599	1	MRC.0.65 M65 Collectibles BuyerID 0-36M
+BUYL.MRC.0.66	1600	1600	1	MRC.0.66 M66 Miscellaneous BuyerID Life
+TRNL.MRC.0.66	1601	1603	3	MRC.0.66 M66 Miscellaneous Trans Life
+DOLL.MRC.0.66	1604	1609	6	MRC.0.66 M66 Miscellaneous Dollars Life
+RECL.MRC.0.66	1610	1615	6	MRC.0.66 M66 Miscellaneous Recency
+TRNA.MRC.0.66	1616	1618	3	MRC.0.66 M66 Miscellaneous Trans 0-12M
+DOLA.MRC.0.66	1619	1624	6	MRC.0.66 M66 Miscellaneous Dollars 0-12M
+BUYA.MRC.0.66	1625	1625	1	MRC.0.66 M66 Miscellaneous BuyerID 0-12M
+TRN_C.MRC.0.66	1626	1628	3	MRC.0.66 M66 Miscellaneous Trans 0-36M
+DOL_C.MRC.0.66	1629	1634	6	MRC.0.66 M66 Miscellaneous Dollars 0-36M
+BUY_C.MRC.0.66	1635	1635	1	MRC.0.66 M66 Miscellaneous BuyerID 0-36M
+BUYL.MRC.0.67	1636	1636	1	MRC.0.67 M67 DTC - Opp Seekers BuyerID Life
+TRNL.MRC.0.67	1637	1639	3	MRC.0.67 M67 DTC - Opp Seekers Trans Life
+DOLL.MRC.0.67	1640	1645	6	MRC.0.67 M67 DTC - Opp Seekers Dollars Life
+RECL.MRC.0.67	1646	1651	6	MRC.0.67 M67 DTC - Opp Seekers Recency
+TRNA.MRC.0.67	1652	1654	3	MRC.0.67 M67 DTC - Opp Seekers Trans 0-12M
+DOLA.MRC.0.67	1655	1660	6	MRC.0.67 M67 DTC - Opp Seekers Dollars 0-12M
+BUYA.MRC.0.67	1661	1661	1	MRC.0.67 M67 DTC - Opp Seekers BuyerID 0-12M
+TRN_C.MRC.0.67	1662	1664	3	MRC.0.67 M67 DTC - Opp Seekers Trans 0-36M
+DOL_C.MRC.0.67	1665	1670	6	MRC.0.67 M67 DTC - Opp Seekers Dollars 0-36M
+BUY_C.MRC.0.67	1671	1671	1	MRC.0.67 M67 DTC - Opp Seekers BuyerID 0-36M
+BUYL.MRC.0.68	1672	1672	1	MRC.0.68 M68 Music BuyerID Life
+TRNL.MRC.0.68	1673	1675	3	MRC.0.68 M68 Music Trans Life
+DOLL.MRC.0.68	1676	1681	6	MRC.0.68 M68 Music Dollars Life
+RECL.MRC.0.68	1682	1687	6	MRC.0.68 M68 Music Recency
+TRNA.MRC.0.68	1688	1690	3	MRC.0.68 M68 Music Trans 0-12M
+DOLA.MRC.0.68	1691	1696	6	MRC.0.68 M68 Music Dollars 0-12M
+BUYA.MRC.0.68	1697	1697	1	MRC.0.68 M68 Music BuyerID 0-12M
+TRN_C.MRC.0.68	1698	1700	3	MRC.0.68 M68 Music Trans 0-36M
+DOL_C.MRC.0.68	1701	1706	6	MRC.0.68 M68 Music Dollars 0-36M
+BUY_C.MRC.0.68	1707	1707	1	MRC.0.68 M68 Music BuyerID 0-36M
+BUYL.MRC.0.69	1708	1708	1	MRC.0.69 M69 Video BuyerID Life
+TRNL.MRC.0.69	1709	1711	3	MRC.0.69 M69 Video Trans Life
+DOLL.MRC.0.69	1712	1717	6	MRC.0.69 M69 Video Dollars Life
+RECL.MRC.0.69	1718	1723	6	MRC.0.69 M69 Video Recency
+TRNA.MRC.0.69	1724	1726	3	MRC.0.69 M69 Video Trans 0-12M
+DOLA.MRC.0.69	1727	1732	6	MRC.0.69 M69 Video Dollars 0-12M
+BUYA.MRC.0.69	1733	1733	1	MRC.0.69 M69 Video BuyerID 0-12M
+TRN_C.MRC.0.69	1734	1736	3	MRC.0.69 M69 Video Trans 0-36M
+DOL_C.MRC.0.69	1737	1742	6	MRC.0.69 M69 Video Dollars 0-36M
+BUY_C.MRC.0.69	1743	1743	1	MRC.0.69 M69 Video BuyerID 0-36M
+BUYL.MRC.0.70	1744	1744	1	MRC.0.70 M70 NFP Animal/Wildlife BuyerID Life
+TRNL.MRC.0.70	1745	1747	3	MRC.0.70 M70 NFP Animal/Wildlife Trans Life
+DOLL.MRC.0.70	1748	1753	6	MRC.0.70 M70 NFP Animal/Wildlife Dollars Life
+RECL.MRC.0.70	1754	1759	6	MRC.0.70 M70 NFP Animal/Wildlife Recency
+TRNA.MRC.0.70	1760	1762	3	MRC.0.70 M70 NFP Animal/Wildlife Trans 0-12M
+DOLA.MRC.0.70	1763	1768	6	MRC.0.70 M70 NFP Animal/Wildlife Dollars 0-12M
+BUYA.MRC.0.70	1769	1769	1	MRC.0.70 M70 NFP Animal/Wildlife BuyerID 0-12M
+TRN_C.MRC.0.70	1770	1772	3	MRC.0.70 M70 NFP Animal/Wildlife Trans 0-36M
+DOL_C.MRC.0.70	1773	1778	6	MRC.0.70 M70 NFP Animal/Wildlife Dollars 0-36M
+BUY_C.MRC.0.70	1779	1779	1	MRC.0.70 M70 NFP Animal/Wildlife BuyerID 0-36M
+BUYL.MRC.0.71	1780	1780	1	MRC.0.71 M71 NFP Children's BuyerID Life
+TRNL.MRC.0.71	1781	1783	3	MRC.0.71 M71 NFP Children's Trans Life
+DOLL.MRC.0.71	1784	1789	6	MRC.0.71 M71 NFP Children's Dollars Life
+RECL.MRC.0.71	1790	1795	6	MRC.0.71 M71 NFP Children's Recency
+TRNA.MRC.0.71	1796	1798	3	MRC.0.71 M71 NFP Children's Trans 0-12M
+DOLA.MRC.0.71	1799	1804	6	MRC.0.71 M71 NFP Children's Dollars 0-12M
+BUYA.MRC.0.71	1805	1805	1	MRC.0.71 M71 NFP Children's BuyerID 0-12M
+TRN_C.MRC.0.71	1806	1808	3	MRC.0.71 M71 NFP Children's Trans 0-36M
+DOL_C.MRC.0.71	1809	1814	6	MRC.0.71 M71 NFP Children's Dollars 0-36M
+BUY_C.MRC.0.71	1815	1815	1	MRC.0.71 M71 NFP Children's BuyerID 0-36M
+BUYL.MRC.0.72	1816	1816	1	MRC.0.72 M72 NFP Cultural BuyerID Life
+TRNL.MRC.0.72	1817	1819	3	MRC.0.72 M72 NFP Cultural Trans Life
+DOLL.MRC.0.72	1820	1825	6	MRC.0.72 M72 NFP Cultural Dollars Life
+RECL.MRC.0.72	1826	1831	6	MRC.0.72 M72 NFP Cultural Recency
+TRNA.MRC.0.72	1832	1834	3	MRC.0.72 M72 NFP Cultural Trans 0-12M
+DOLA.MRC.0.72	1835	1840	6	MRC.0.72 M72 NFP Cultural Dollars 0-12M
+BUYA.MRC.0.72	1841	1841	1	MRC.0.72 M72 NFP Cultural BuyerID 0-12M
+TRN_C.MRC.0.72	1842	1844	3	MRC.0.72 M72 NFP Cultural Trans 0-36M
+DOL_C.MRC.0.72	1845	1850	6	MRC.0.72 M72 NFP Cultural Dollars 0-36M
+BUY_C.MRC.0.72	1851	1851	1	MRC.0.72 M72 NFP Cultural BuyerID 0-36M
+BUYL.MRC.0.73	1852	1852	1	MRC.0.73 M73 NFP Environmental BuyerID Life
+TRNL.MRC.0.73	1853	1855	3	MRC.0.73 M73 NFP Environmental Trans Life
+DOLL.MRC.0.73	1856	1861	6	MRC.0.73 M73 NFP Environmental Dollars Life
+RECL.MRC.0.73	1862	1867	6	MRC.0.73 M73 NFP Environmental Recency
+TRNA.MRC.0.73	1868	1870	3	MRC.0.73 M73 NFP Environmental Trans 0-12M
+DOLA.MRC.0.73	1871	1876	6	MRC.0.73 M73 NFP Environmental Dollars 0-12M
+BUYA.MRC.0.73	1877	1877	1	MRC.0.73 M73 NFP Environmental BuyerID 0-12M
+TRN_C.MRC.0.73	1878	1880	3	MRC.0.73 M73 NFP Environmental Trans 0-36M
+DOL_C.MRC.0.73	1881	1886	6	MRC.0.73 M73 NFP Environmental Dollars 0-36M
+BUY_C.MRC.0.73	1887	1887	1	MRC.0.73 M73 NFP Environmental BuyerID 0-36M
+BUYL.MRC.0.74	1888	1888	1	MRC.0.74 M74 NFP Food Bnk/Soup K BuyerID Life
+TRNL.MRC.0.74	1889	1891	3	MRC.0.74 M74 NFP Food Bnk/Soup K Trans Life
+DOLL.MRC.0.74	1892	1897	6	MRC.0.74 M74 NFP Food Bnk/Soup K Dollars Life
+RECL.MRC.0.74	1898	1903	6	MRC.0.74 M74 NFP Food Bnk/Soup K Recency
+TRNA.MRC.0.74	1904	1906	3	MRC.0.74 M74 NFP Food Bnk/Soup K Trans 0-12M
+DOLA.MRC.0.74	1907	1912	6	MRC.0.74 M74 NFP Food Bnk/Soup K Dollars 0-12M
+BUYA.MRC.0.74	1913	1913	1	MRC.0.74 M74 NFP Food Bnk/Soup K BuyerID 0-12M
+TRN_C.MRC.0.74	1914	1916	3	MRC.0.74 M74 NFP Food Bnk/Soup K Trans 0-36M
+DOL_C.MRC.0.74	1917	1922	6	MRC.0.74 M74 NFP Food Bnk/Soup K Dollars 0-36M
+BUY_C.MRC.0.74	1923	1923	1	MRC.0.74 M74 NFP Food Bnk/Soup K BuyerID 0-36M
+BUYL.MRC.0.75	1924	1924	1	MRC.0.75 M75 NFP Health/Med Rsrch BuyerID Life
+TRNL.MRC.0.75	1925	1927	3	MRC.0.75 M75 NFP Health/Med Rsrch Trans Life
+DOLL.MRC.0.75	1928	1933	6	MRC.0.75 M75 NFP Health/Med Rsrch Dollars Life
+RECL.MRC.0.75	1934	1939	6	MRC.0.75 M75 NFP Health/Med Rsrch Recency
+TRNA.MRC.0.75	1940	1942	3	MRC.0.75 M75 NFP Health/Med Rsrch Trans 0-12M
+DOLA.MRC.0.75	1943	1948	6	MRC.0.75 M75 NFP Health/Med Rsrch Dollars 0-12M
+BUYA.MRC.0.75	1949	1949	1	MRC.0.75 M75 NFP Health/Med Rsrch BuyerID 0-12M
+TRN_C.MRC.0.75	1950	1952	3	MRC.0.75 M75 NFP Health/Med Rsrch Trans 0-36M
+DOL_C.MRC.0.75	1953	1958	6	MRC.0.75 M75 NFP Health/Med Rsrch Dollars 0-36M
+BUY_C.MRC.0.75	1959	1959	1	MRC.0.75 M75 NFP Health/Med Rsrch BuyerID 0-36M
+BUYL.MRC.0.76	1960	1960	1	MRC.0.76 M76 NFP Humanitarian BuyerID Life
+TRNL.MRC.0.76	1961	1963	3	MRC.0.76 M76 NFP Humanitarian Trans Life
+DOLL.MRC.0.76	1964	1969	6	MRC.0.76 M76 NFP Humanitarian Dollars Life
+RECL.MRC.0.76	1970	1975	6	MRC.0.76 M76 NFP Humanitarian Recency
+TRNA.MRC.0.76	1976	1978	3	MRC.0.76 M76 NFP Humanitarian Trans 0-12M
+DOLA.MRC.0.76	1979	1984	6	MRC.0.76 M76 NFP Humanitarian Dollars 0-12M
+BUYA.MRC.0.76	1985	1985	1	MRC.0.76 M76 NFP Humanitarian BuyerID 0-12M
+TRN_C.MRC.0.76	1986	1988	3	MRC.0.76 M76 NFP Humanitarian Trans 0-36M
+DOL_C.MRC.0.76	1989	1994	6	MRC.0.76 M76 NFP Humanitarian Dollars 0-36M
+BUY_C.MRC.0.76	1995	1995	1	MRC.0.76 M76 NFP Humanitarian BuyerID 0-36M
+BUYL.MRC.0.77	1996	1996	1	MRC.0.77 M77 NFP Miscellaneous BuyerID Life
+TRNL.MRC.0.77	1997	1999	3	MRC.0.77 M77 NFP Miscellaneous Trans Life
+DOLL.MRC.0.77	2000	2005	6	MRC.0.77 M77 NFP Miscellaneous Dollars Life
+RECL.MRC.0.77	2006	2011	6	MRC.0.77 M77 NFP Miscellaneous Recency
+TRNA.MRC.0.77	2012	2014	3	MRC.0.77 M77 NFP Miscellaneous Trans 0-12M
+DOLA.MRC.0.77	2015	2020	6	MRC.0.77 M77 NFP Miscellaneous Dollars 0-12M
+BUYA.MRC.0.77	2021	2021	1	MRC.0.77 M77 NFP Miscellaneous BuyerID 0-12M
+TRN_C.MRC.0.77	2022	2024	3	MRC.0.77 M77 NFP Miscellaneous Trans 0-36M
+DOL_C.MRC.0.77	2025	2030	6	MRC.0.77 M77 NFP Miscellaneous Dollars 0-36M
+BUY_C.MRC.0.77	2031	2031	1	MRC.0.77 M77 NFP Miscellaneous BuyerID 0-36M
+BUYL.MRC.0.78	2032	2032	1	MRC.0.78 M78 NFP World Relief BuyerID Life
+TRNL.MRC.0.78	2033	2035	3	MRC.0.78 M78 NFP World Relief Trans Life
+DOLL.MRC.0.78	2036	2041	6	MRC.0.78 M78 NFP World Relief Dollars Life
+RECL.MRC.0.78	2042	2047	6	MRC.0.78 M78 NFP World Relief Recency
+TRNA.MRC.0.78	2048	2050	3	MRC.0.78 M78 NFP World Relief Trans 0-12M
+DOLA.MRC.0.78	2051	2056	6	MRC.0.78 M78 NFP World Relief Dollars 0-12M
+BUYA.MRC.0.78	2057	2057	1	MRC.0.78 M78 NFP World Relief BuyerID 0-12M
+TRN_C.MRC.0.78	2058	2060	3	MRC.0.78 M78 NFP World Relief Trans 0-36M
+DOL_C.MRC.0.78	2061	2066	6	MRC.0.78 M78 NFP World Relief Dollars 0-36M
+BUY_C.MRC.0.78	2067	2067	1	MRC.0.78 M78 NFP World Relief BuyerID 0-36M
+BUYL.MRC.0.79	2068	2068	1	MRC.0.79 M79 Pub-Auto/Aviation BuyerID Life
+TRNL.MRC.0.79	2069	2071	3	MRC.0.79 M79 Pub-Auto/Aviation Trans Life
+DOLL.MRC.0.79	2072	2077	6	MRC.0.79 M79 Pub-Auto/Aviation Dollars Life
+RECL.MRC.0.79	2078	2083	6	MRC.0.79 M79 Pub-Auto/Aviation Recency
+TRNA.MRC.0.79	2084	2086	3	MRC.0.79 M79 Pub-Auto/Aviation Trans 0-12M
+DOLA.MRC.0.79	2087	2092	6	MRC.0.79 M79 Pub-Auto/Aviation Dollars 0-12M
+BUYA.MRC.0.79	2093	2093	1	MRC.0.79 M79 Pub-Auto/Aviation BuyerID 0-12M
+TRN_C.MRC.0.79	2094	2096	3	MRC.0.79 M79 Pub-Auto/Aviation Trans 0-36M
+DOL_C.MRC.0.79	2097	2102	6	MRC.0.79 M79 Pub-Auto/Aviation Dollars 0-36M
+BUY_C.MRC.0.79	2103	2103	1	MRC.0.79 M79 Pub-Auto/Aviation BuyerID 0-36M
+BUYL.MRC.0.80	2104	2104	1	MRC.0.80 M80 Pub-Books/Ent BuyerID Life
+TRNL.MRC.0.80	2105	2107	3	MRC.0.80 M80 Pub-Books/Ent Trans Life
+DOLL.MRC.0.80	2108	2113	6	MRC.0.80 M80 Pub-Books/Ent Dollars Life
+RECL.MRC.0.80	2114	2119	6	MRC.0.80 M80 Pub-Books/Ent Recency
+TRNA.MRC.0.80	2120	2122	3	MRC.0.80 M80 Pub-Books/Ent Trans 0-12M
+DOLA.MRC.0.80	2123	2128	6	MRC.0.80 M80 Pub-Books/Ent Dollars 0-12M
+BUYA.MRC.0.80	2129	2129	1	MRC.0.80 M80 Pub-Books/Ent BuyerID 0-12M
+TRN_C.MRC.0.80	2130	2132	3	MRC.0.80 M80 Pub-Books/Ent Trans 0-36M
+DOL_C.MRC.0.80	2133	2138	6	MRC.0.80 M80 Pub-Books/Ent Dollars 0-36M
+BUY_C.MRC.0.80	2139	2139	1	MRC.0.80 M80 Pub-Books/Ent BuyerID 0-36M
+BUYL.MRC.0.81	2140	2140	1	MRC.0.81 M81 Pub-Business/Fin BuyerID Life
+TRNL.MRC.0.81	2141	2143	3	MRC.0.81 M81 Pub-Business/Fin Trans Life
+DOLL.MRC.0.81	2144	2149	6	MRC.0.81 M81 Pub-Business/Fin Dollars Life
+RECL.MRC.0.81	2150	2155	6	MRC.0.81 M81 Pub-Business/Fin Recency
+TRNA.MRC.0.81	2156	2158	3	MRC.0.81 M81 Pub-Business/Fin Trans 0-12M
+DOLA.MRC.0.81	2159	2164	6	MRC.0.81 M81 Pub-Business/Fin Dollars 0-12M
+BUYA.MRC.0.81	2165	2165	1	MRC.0.81 M81 Pub-Business/Fin BuyerID 0-12M
+TRN_C.MRC.0.81	2166	2168	3	MRC.0.81 M81 Pub-Business/Fin Trans 0-36M
+DOL_C.MRC.0.81	2169	2174	6	MRC.0.81 M81 Pub-Business/Fin Dollars 0-36M
+BUY_C.MRC.0.81	2175	2175	1	MRC.0.81 M81 Pub-Business/Fin BuyerID 0-36M
+BUYL.MRC.0.82	2176	2176	1	MRC.0.82 M82 Pub-Cooking/Food BuyerID Life
+TRNL.MRC.0.82	2177	2179	3	MRC.0.82 M82 Pub-Cooking/Food Trans Life
+DOLL.MRC.0.82	2180	2185	6	MRC.0.82 M82 Pub-Cooking/Food Dollars Life
+RECL.MRC.0.82	2186	2191	6	MRC.0.82 M82 Pub-Cooking/Food Recency
+TRNA.MRC.0.82	2192	2194	3	MRC.0.82 M82 Pub-Cooking/Food Trans 0-12M
+DOLA.MRC.0.82	2195	2200	6	MRC.0.82 M82 Pub-Cooking/Food Dollars 0-12M
+BUYA.MRC.0.82	2201	2201	1	MRC.0.82 M82 Pub-Cooking/Food BuyerID 0-12M
+TRN_C.MRC.0.82	2202	2204	3	MRC.0.82 M82 Pub-Cooking/Food Trans 0-36M
+DOL_C.MRC.0.82	2205	2210	6	MRC.0.82 M82 Pub-Cooking/Food Dollars 0-36M
+BUY_C.MRC.0.82	2211	2211	1	MRC.0.82 M82 Pub-Cooking/Food BuyerID 0-36M
+BUYL.MRC.0.83	2212	2212	1	MRC.0.83 M83 Pub-Crafts/Knit/Sew BuyerID Life
+TRNL.MRC.0.83	2213	2215	3	MRC.0.83 M83 Pub-Crafts/Knit/Sew Trans Life
+DOLL.MRC.0.83	2216	2221	6	MRC.0.83 M83 Pub-Crafts/Knit/Sew Dollars Life
+RECL.MRC.0.83	2222	2227	6	MRC.0.83 M83 Pub-Crafts/Knit/Sew Recency
+TRNA.MRC.0.83	2228	2230	3	MRC.0.83 M83 Pub-Crafts/Knit/Sew Trans 0-12M
+DOLA.MRC.0.83	2231	2236	6	MRC.0.83 M83 Pub-Crafts/Knit/Sew Dollars 0-12M
+BUYA.MRC.0.83	2237	2237	1	MRC.0.83 M83 Pub-Crafts/Knit/Sew BuyerID 0-12M
+TRN_C.MRC.0.83	2238	2240	3	MRC.0.83 M83 Pub-Crafts/Knit/Sew Trans 0-36M
+DOL_C.MRC.0.83	2241	2246	6	MRC.0.83 M83 Pub-Crafts/Knit/Sew Dollars 0-36M
+BUY_C.MRC.0.83	2247	2247	1	MRC.0.83 M83 Pub-Crafts/Knit/Sew BuyerID 0-36M
+BUYL.MRC.0.84	2248	2248	1	MRC.0.84 M84 Pub-DIY/Hm Imp/Wdwrk BuyerID Life
+TRNL.MRC.0.84	2249	2251	3	MRC.0.84 M84 Pub-DIY/Hm Imp/Wdwrk Trans Life
+DOLL.MRC.0.84	2252	2257	6	MRC.0.84 M84 Pub-DIY/Hm Imp/Wdwrk Dollars Life
+RECL.MRC.0.84	2258	2263	6	MRC.0.84 M84 Pub-DIY/Hm Imp/Wdwrk Recency
+TRNA.MRC.0.84	2264	2266	3	MRC.0.84 M84 Pub-DIY/Hm Imp/Wdwrk Trans 0-12M
+DOLA.MRC.0.84	2267	2272	6	MRC.0.84 M84 Pub-DIY/Hm Imp/Wdwrk Dollars 0-12M
+BUYA.MRC.0.84	2273	2273	1	MRC.0.84 M84 Pub-DIY/Hm Imp/Wdwrk BuyerID 0-12M
+TRN_C.MRC.0.84	2274	2276	3	MRC.0.84 M84 Pub-DIY/Hm Imp/Wdwrk Trans 0-36M
+DOL_C.MRC.0.84	2277	2282	6	MRC.0.84 M84 Pub-DIY/Hm Imp/Wdwrk Dollars 0-36M
+BUY_C.MRC.0.84	2283	2283	1	MRC.0.84 M84 Pub-DIY/Hm Imp/Wdwrk BuyerID 0-36M
+BUYL.MRC.0.85	2284	2284	1	MRC.0.85 M85 Pub-Garden BuyerID Life
+TRNL.MRC.0.85	2285	2287	3	MRC.0.85 M85 Pub-Garden Trans Life
+DOLL.MRC.0.85	2288	2293	6	MRC.0.85 M85 Pub-Garden Dollars Life
+RECL.MRC.0.85	2294	2299	6	MRC.0.85 M85 Pub-Garden Recency
+TRNA.MRC.0.85	2300	2302	3	MRC.0.85 M85 Pub-Garden Trans 0-12M
+DOLA.MRC.0.85	2303	2308	6	MRC.0.85 M85 Pub-Garden Dollars 0-12M
+BUYA.MRC.0.85	2309	2309	1	MRC.0.85 M85 Pub-Garden BuyerID 0-12M
+TRN_C.MRC.0.85	2310	2312	3	MRC.0.85 M85 Pub-Garden Trans 0-36M
+DOL_C.MRC.0.85	2313	2318	6	MRC.0.85 M85 Pub-Garden Dollars 0-36M
+BUY_C.MRC.0.85	2319	2319	1	MRC.0.85 M85 Pub-Garden BuyerID 0-36M
+BUYL.MRC.0.86	2320	2320	1	MRC.0.86 M86 Pub-Health/Fitness BuyerID Life
+TRNL.MRC.0.86	2321	2323	3	MRC.0.86 M86 Pub-Health/Fitness Trans Life
+DOLL.MRC.0.86	2324	2329	6	MRC.0.86 M86 Pub-Health/Fitness Dollars Life
+RECL.MRC.0.86	2330	2335	6	MRC.0.86 M86 Pub-Health/Fitness Recency
+TRNA.MRC.0.86	2336	2338	3	MRC.0.86 M86 Pub-Health/Fitness Trans 0-12M
+DOLA.MRC.0.86	2339	2344	6	MRC.0.86 M86 Pub-Health/Fitness Dollars 0-12M
+BUYA.MRC.0.86	2345	2345	1	MRC.0.86 M86 Pub-Health/Fitness BuyerID 0-12M
+TRN_C.MRC.0.86	2346	2348	3	MRC.0.86 M86 Pub-Health/Fitness Trans 0-36M
+DOL_C.MRC.0.86	2349	2354	6	MRC.0.86 M86 Pub-Health/Fitness Dollars 0-36M
+BUY_C.MRC.0.86	2355	2355	1	MRC.0.86 M86 Pub-Health/Fitness BuyerID 0-36M
+BUYL.MRC.0.87	2356	2356	1	MRC.0.87 M87 Pub-History BuyerID Life
+TRNL.MRC.0.87	2357	2359	3	MRC.0.87 M87 Pub-History Trans Life
+DOLL.MRC.0.87	2360	2365	6	MRC.0.87 M87 Pub-History Dollars Life
+RECL.MRC.0.87	2366	2371	6	MRC.0.87 M87 Pub-History Recency
+TRNA.MRC.0.87	2372	2374	3	MRC.0.87 M87 Pub-History Trans 0-12M
+DOLA.MRC.0.87	2375	2380	6	MRC.0.87 M87 Pub-History Dollars 0-12M
+BUYA.MRC.0.87	2381	2381	1	MRC.0.87 M87 Pub-History BuyerID 0-12M
+TRN_C.MRC.0.87	2382	2384	3	MRC.0.87 M87 Pub-History Trans 0-36M
+DOL_C.MRC.0.87	2385	2390	6	MRC.0.87 M87 Pub-History Dollars 0-36M
+BUY_C.MRC.0.87	2391	2391	1	MRC.0.87 M87 Pub-History BuyerID 0-36M
+BUYL.MRC.0.88	2392	2392	1	MRC.0.88 M88 Pub-Home BuyerID Life
+TRNL.MRC.0.88	2393	2395	3	MRC.0.88 M88 Pub-Home Trans Life
+DOLL.MRC.0.88	2396	2401	6	MRC.0.88 M88 Pub-Home Dollars Life
+RECL.MRC.0.88	2402	2407	6	MRC.0.88 M88 Pub-Home Recency
+TRNA.MRC.0.88	2408	2410	3	MRC.0.88 M88 Pub-Home Trans 0-12M
+DOLA.MRC.0.88	2411	2416	6	MRC.0.88 M88 Pub-Home Dollars 0-12M
+BUYA.MRC.0.88	2417	2417	1	MRC.0.88 M88 Pub-Home BuyerID 0-12M
+TRN_C.MRC.0.88	2418	2420	3	MRC.0.88 M88 Pub-Home Trans 0-36M
+DOL_C.MRC.0.88	2421	2426	6	MRC.0.88 M88 Pub-Home Dollars 0-36M
+BUY_C.MRC.0.88	2427	2427	1	MRC.0.88 M88 Pub-Home BuyerID 0-36M
+BUYL.MRC.0.89	2428	2428	1	MRC.0.89 M89 Pub-Kids/Teens BuyerID Life
+TRNL.MRC.0.89	2429	2431	3	MRC.0.89 M89 Pub-Kids/Teens Trans Life
+DOLL.MRC.0.89	2432	2437	6	MRC.0.89 M89 Pub-Kids/Teens Dollars Life
+RECL.MRC.0.89	2438	2443	6	MRC.0.89 M89 Pub-Kids/Teens Recency
+TRNA.MRC.0.89	2444	2446	3	MRC.0.89 M89 Pub-Kids/Teens Trans 0-12M
+DOLA.MRC.0.89	2447	2452	6	MRC.0.89 M89 Pub-Kids/Teens Dollars 0-12M
+BUYA.MRC.0.89	2453	2453	1	MRC.0.89 M89 Pub-Kids/Teens BuyerID 0-12M
+TRN_C.MRC.0.89	2454	2456	3	MRC.0.89 M89 Pub-Kids/Teens Trans 0-36M
+DOL_C.MRC.0.89	2457	2462	6	MRC.0.89 M89 Pub-Kids/Teens Dollars 0-36M
+BUY_C.MRC.0.89	2463	2463	1	MRC.0.89 M89 Pub-Kids/Teens BuyerID 0-36M
+BUYL.MRC.0.90	2464	2464	1	MRC.0.90 M90 Pub-Men's BuyerID Life
+TRNL.MRC.0.90	2465	2467	3	MRC.0.90 M90 Pub-Men's Trans Life
+DOLL.MRC.0.90	2468	2473	6	MRC.0.90 M90 Pub-Men's Dollars Life
+RECL.MRC.0.90	2474	2479	6	MRC.0.90 M90 Pub-Men's Recency
+TRNA.MRC.0.90	2480	2482	3	MRC.0.90 M90 Pub-Men's Trans 0-12M
+DOLA.MRC.0.90	2483	2488	6	MRC.0.90 M90 Pub-Men's Dollars 0-12M
+BUYA.MRC.0.90	2489	2489	1	MRC.0.90 M90 Pub-Men's BuyerID 0-12M
+TRN_C.MRC.0.90	2490	2492	3	MRC.0.90 M90 Pub-Men's Trans 0-36M
+DOL_C.MRC.0.90	2493	2498	6	MRC.0.90 M90 Pub-Men's Dollars 0-36M
+BUY_C.MRC.0.90	2499	2499	1	MRC.0.90 M90 Pub-Men's BuyerID 0-36M
+BUYL.MRC.0.91	2500	2500	1	MRC.0.91 M91 Pub-Miscellaneous BuyerID Life
+TRNL.MRC.0.91	2501	2503	3	MRC.0.91 M91 Pub-Miscellaneous Trans Life
+DOLL.MRC.0.91	2504	2509	6	MRC.0.91 M91 Pub-Miscellaneous Dollars Life
+RECL.MRC.0.91	2510	2515	6	MRC.0.91 M91 Pub-Miscellaneous Recency
+TRNA.MRC.0.91	2516	2518	3	MRC.0.91 M91 Pub-Miscellaneous Trans 0-12M
+DOLA.MRC.0.91	2519	2524	6	MRC.0.91 M91 Pub-Miscellaneous Dollars 0-12M
+BUYA.MRC.0.91	2525	2525	1	MRC.0.91 M91 Pub-Miscellaneous BuyerID 0-12M
+TRN_C.MRC.0.91	2526	2528	3	MRC.0.91 M91 Pub-Miscellaneous Trans 0-36M
+DOL_C.MRC.0.91	2529	2534	6	MRC.0.91 M91 Pub-Miscellaneous Dollars 0-36M
+BUY_C.MRC.0.91	2535	2535	1	MRC.0.91 M91 Pub-Miscellaneous BuyerID 0-36M
+BUYL.MRC.0.92	2536	2536	1	MRC.0.92 M92 Pub-News/Cur Events BuyerID Life
+TRNL.MRC.0.92	2537	2539	3	MRC.0.92 M92 Pub-News/Cur Events Trans Life
+DOLL.MRC.0.92	2540	2545	6	MRC.0.92 M92 Pub-News/Cur Events Dollars Life
+RECL.MRC.0.92	2546	2551	6	MRC.0.92 M92 Pub-News/Cur Events Recency
+TRNA.MRC.0.92	2552	2554	3	MRC.0.92 M92 Pub-News/Cur Events Trans 0-12M
+DOLA.MRC.0.92	2555	2560	6	MRC.0.92 M92 Pub-News/Cur Events Dollars 0-12M
+BUYA.MRC.0.92	2561	2561	1	MRC.0.92 M92 Pub-News/Cur Events BuyerID 0-12M
+TRN_C.MRC.0.92	2562	2564	3	MRC.0.92 M92 Pub-News/Cur Events Trans 0-36M
+DOL_C.MRC.0.92	2565	2570	6	MRC.0.92 M92 Pub-News/Cur Events Dollars 0-36M
+BUY_C.MRC.0.92	2571	2571	1	MRC.0.92 M92 Pub-News/Cur Events BuyerID 0-36M
+BUYL.MRC.0.93	2572	2572	1	MRC.0.93 M93 Pub-Outdoors BuyerID Life
+TRNL.MRC.0.93	2573	2575	3	MRC.0.93 M93 Pub-Outdoors Trans Life
+DOLL.MRC.0.93	2576	2581	6	MRC.0.93 M93 Pub-Outdoors Dollars Life
+RECL.MRC.0.93	2582	2587	6	MRC.0.93 M93 Pub-Outdoors Recency
+TRNA.MRC.0.93	2588	2590	3	MRC.0.93 M93 Pub-Outdoors Trans 0-12M
+DOLA.MRC.0.93	2591	2596	6	MRC.0.93 M93 Pub-Outdoors Dollars 0-12M
+BUYA.MRC.0.93	2597	2597	1	MRC.0.93 M93 Pub-Outdoors BuyerID 0-12M
+TRN_C.MRC.0.93	2598	2600	3	MRC.0.93 M93 Pub-Outdoors Trans 0-36M
+DOL_C.MRC.0.93	2601	2606	6	MRC.0.93 M93 Pub-Outdoors Dollars 0-36M
+BUY_C.MRC.0.93	2607	2607	1	MRC.0.93 M93 Pub-Outdoors BuyerID 0-36M
+BUYL.MRC.0.94	2608	2608	1	MRC.0.94 M94 Pub-Relig/Spiritual BuyerID Life
+TRNL.MRC.0.94	2609	2611	3	MRC.0.94 M94 Pub-Relig/Spiritual Trans Life
+DOLL.MRC.0.94	2612	2617	6	MRC.0.94 M94 Pub-Relig/Spiritual Dollars Life
+RECL.MRC.0.94	2618	2623	6	MRC.0.94 M94 Pub-Relig/Spiritual Recency
+TRNA.MRC.0.94	2624	2626	3	MRC.0.94 M94 Pub-Relig/Spiritual Trans 0-12M
+DOLA.MRC.0.94	2627	2632	6	MRC.0.94 M94 Pub-Relig/Spiritual Dollars 0-12M
+BUYA.MRC.0.94	2633	2633	1	MRC.0.94 M94 Pub-Relig/Spiritual BuyerID 0-12M
+TRN_C.MRC.0.94	2634	2636	3	MRC.0.94 M94 Pub-Relig/Spiritual Trans 0-36M
+DOL_C.MRC.0.94	2637	2642	6	MRC.0.94 M94 Pub-Relig/Spiritual Dollars 0-36M
+BUY_C.MRC.0.94	2643	2643	1	MRC.0.94 M94 Pub-Relig/Spiritual BuyerID 0-36M
+BUYL.MRC.0.95	2644	2644	1	MRC.0.95 M95 Pub-Sci/Tech/Photo BuyerID Life
+TRNL.MRC.0.95	2645	2647	3	MRC.0.95 M95 Pub-Sci/Tech/Photo Trans Life
+DOLL.MRC.0.95	2648	2653	6	MRC.0.95 M95 Pub-Sci/Tech/Photo Dollars Life
+RECL.MRC.0.95	2654	2659	6	MRC.0.95 M95 Pub-Sci/Tech/Photo Recency
+TRNA.MRC.0.95	2660	2662	3	MRC.0.95 M95 Pub-Sci/Tech/Photo Trans 0-12M
+DOLA.MRC.0.95	2663	2668	6	MRC.0.95 M95 Pub-Sci/Tech/Photo Dollars 0-12M
+BUYA.MRC.0.95	2669	2669	1	MRC.0.95 M95 Pub-Sci/Tech/Photo BuyerID 0-12M
+TRN_C.MRC.0.95	2670	2672	3	MRC.0.95 M95 Pub-Sci/Tech/Photo Trans 0-36M
+DOL_C.MRC.0.95	2673	2678	6	MRC.0.95 M95 Pub-Sci/Tech/Photo Dollars 0-36M
+BUY_C.MRC.0.95	2679	2679	1	MRC.0.95 M95 Pub-Sci/Tech/Photo BuyerID 0-36M
+BUYL.MRC.0.96	2680	2680	1	MRC.0.96 M96 Pub-Women's BuyerID Life
+TRNL.MRC.0.96	2681	2683	3	MRC.0.96 M96 Pub-Women's Trans Life
+DOLL.MRC.0.96	2684	2689	6	MRC.0.96 M96 Pub-Women's Dollars Life
+RECL.MRC.0.96	2690	2695	6	MRC.0.96 M96 Pub-Women's Recency
+TRNA.MRC.0.96	2696	2698	3	MRC.0.96 M96 Pub-Women's Trans 0-12M
+DOLA.MRC.0.96	2699	2704	6	MRC.0.96 M96 Pub-Women's Dollars 0-12M
+BUYA.MRC.0.96	2705	2705	1	MRC.0.96 M96 Pub-Women's BuyerID 0-12M
+TRN_C.MRC.0.96	2706	2708	3	MRC.0.96 M96 Pub-Women's Trans 0-36M
+DOL_C.MRC.0.96	2709	2714	6	MRC.0.96 M96 Pub-Women's Dollars 0-36M
+BUY_C.MRC.0.96	2715	2715	1	MRC.0.96 M96 Pub-Women's BuyerID 0-36M
+BUYL.MRC.0.97	2716	2716	1	MRC.0.97 M97 Hlth-Allergy/Immun BuyerID Life
+TRNL.MRC.0.97	2717	2719	3	MRC.0.97 M97 Hlth-Allergy/Immun Trans Life
+DOLL.MRC.0.97	2720	2725	6	MRC.0.97 M97 Hlth-Allergy/Immun Dollars Life
+RECL.MRC.0.97	2726	2731	6	MRC.0.97 M97 Hlth-Allergy/Immun Recency
+TRNA.MRC.0.97	2732	2734	3	MRC.0.97 M97 Hlth-Allergy/Immun Trans 0-12M
+DOLA.MRC.0.97	2735	2740	6	MRC.0.97 M97 Hlth-Allergy/Immun Dollars 0-12M
+BUYA.MRC.0.97	2741	2741	1	MRC.0.97 M97 Hlth-Allergy/Immun BuyerID 0-12M
+TRN_C.MRC.0.97	2742	2744	3	MRC.0.97 M97 Hlth-Allergy/Immun Trans 0-36M
+DOL_C.MRC.0.97	2745	2750	6	MRC.0.97 M97 Hlth-Allergy/Immun Dollars 0-36M
+BUY_C.MRC.0.97	2751	2751	1	MRC.0.97 M97 Hlth-Allergy/Immun BuyerID 0-36M
+BUYL.MRC.0.98	2752	2752	1	MRC.0.98 M98 Hlth-Anti-age/Antiox BuyerID Life
+TRNL.MRC.0.98	2753	2755	3	MRC.0.98 M98 Hlth-Anti-age/Antiox Trans Life
+DOLL.MRC.0.98	2756	2761	6	MRC.0.98 M98 Hlth-Anti-age/Antiox Dollars Life
+RECL.MRC.0.98	2762	2767	6	MRC.0.98 M98 Hlth-Anti-age/Antiox Recency
+TRNA.MRC.0.98	2768	2770	3	MRC.0.98 M98 Hlth-Anti-age/Antiox Trans 0-12M
+DOLA.MRC.0.98	2771	2776	6	MRC.0.98 M98 Hlth-Anti-age/Antiox Dollars 0-12M
+BUYA.MRC.0.98	2777	2777	1	MRC.0.98 M98 Hlth-Anti-age/Antiox BuyerID 0-12M
+TRN_C.MRC.0.98	2778	2780	3	MRC.0.98 M98 Hlth-Anti-age/Antiox Trans 0-36M
+DOL_C.MRC.0.98	2781	2786	6	MRC.0.98 M98 Hlth-Anti-age/Antiox Dollars 0-36M
+BUY_C.MRC.0.98	2787	2787	1	MRC.0.98 M98 Hlth-Anti-age/Antiox BuyerID 0-36M
+BUYL.MRC.0.99	2788	2788	1	MRC.0.99 M99 Hlth-App/Equip BuyerID Life
+TRNL.MRC.0.99	2789	2791	3	MRC.0.99 M99 Hlth-App/Equip Trans Life
+DOLL.MRC.0.99	2792	2797	6	MRC.0.99 M99 Hlth-App/Equip Dollars Life
+RECL.MRC.0.99	2798	2803	6	MRC.0.99 M99 Hlth-App/Equip Recency
+TRNA.MRC.0.99	2804	2806	3	MRC.0.99 M99 Hlth-App/Equip Trans 0-12M
+DOLA.MRC.0.99	2807	2812	6	MRC.0.99 M99 Hlth-App/Equip Dollars 0-12M
+BUYA.MRC.0.99	2813	2813	1	MRC.0.99 M99 Hlth-App/Equip BuyerID 0-12M
+TRN_C.MRC.0.99	2814	2816	3	MRC.0.99 M99 Hlth-App/Equip Trans 0-36M
+DOL_C.MRC.0.99	2817	2822	6	MRC.0.99 M99 Hlth-App/Equip Dollars 0-36M
+BUY_C.MRC.0.99	2823	2823	1	MRC.0.99 M99 Hlth-App/Equip BuyerID 0-36M
+BUYL.MRC.0.100	2824	2824	1	MRC.0.100 M100 Hlth-Blood Sugar BuyerID Life
+TRNL.MRC.0.100	2825	2827	3	MRC.0.100 M100 Hlth-Blood Sugar Trans Life
+DOLL.MRC.0.100	2828	2833	6	MRC.0.100 M100 Hlth-Blood Sugar Dollars Life
+RECL.MRC.0.100	2834	2839	6	MRC.0.100 M100 Hlth-Blood Sugar Recency
+TRNA.MRC.0.100	2840	2842	3	MRC.0.100 M100 Hlth-Blood Sugar Trans 0-12M
+DOLA.MRC.0.100	2843	2848	6	MRC.0.100 M100 Hlth-Blood Sugar Dollars 0-12M
+BUYA.MRC.0.100	2849	2849	1	MRC.0.100 M100 Hlth-Blood Sugar BuyerID 0-12M
+TRN_C.MRC.0.100	2850	2852	3	MRC.0.100 M100 Hlth-Blood Sugar Trans 0-36M
+DOL_C.MRC.0.100	2853	2858	6	MRC.0.100 M100 Hlth-Blood Sugar Dollars 0-36M
+BUY_C.MRC.0.100	2859	2859	1	MRC.0.100 M100 Hlth-Blood Sugar BuyerID 0-36M
+BUYL.MRC.0.101	2860	2860	1	MRC.0.101 M101 Hlth-Diet/Wght Loss BuyerID Life
+TRNL.MRC.0.101	2861	2863	3	MRC.0.101 M101 Hlth-Diet/Wght Loss Trans Life
+DOLL.MRC.0.101	2864	2869	6	MRC.0.101 M101 Hlth-Diet/Wght Loss Dollars Life
+RECL.MRC.0.101	2870	2875	6	MRC.0.101 M101 Hlth-Diet/Wght Loss Recency
+TRNA.MRC.0.101	2876	2878	3	MRC.0.101 M101 Hlth-Diet/Wght Loss Trans 0-12M
+DOLA.MRC.0.101	2879	2884	6	MRC.0.101 M101 Hlth-Diet/Wght Loss Dollars 0-12M
+BUYA.MRC.0.101	2885	2885	1	MRC.0.101 M101 Hlth-Diet/Wght Loss BuyerID 0-12M
+TRN_C.MRC.0.101	2886	2888	3	MRC.0.101 M101 Hlth-Diet/Wght Loss Trans 0-36M
+DOL_C.MRC.0.101	2889	2894	6	MRC.0.101 M101 Hlth-Diet/Wght Loss Dollars 0-36M
+BUY_C.MRC.0.101	2895	2895	1	MRC.0.101 M101 Hlth-Diet/Wght Loss BuyerID 0-36M
+BUYL.MRC.0.102	2896	2896	1	MRC.0.102 M102 Hlth-Digestv/Urinary BuyerID Life
+TRNL.MRC.0.102	2897	2899	3	MRC.0.102 M102 Hlth-Digestv/Urinary Trans Life
+DOLL.MRC.0.102	2900	2905	6	MRC.0.102 M102 Hlth-Digestv/Urinary Dollars Life
+RECL.MRC.0.102	2906	2911	6	MRC.0.102 M102 Hlth-Digestv/Urinary Recency
+TRNA.MRC.0.102	2912	2914	3	MRC.0.102 M102 Hlth-Digestv/Urinary Trans 0-12M
+DOLA.MRC.0.102	2915	2920	6	MRC.0.102 M102 Hlth-Digestv/Urinary Dollars 0-12M
+BUYA.MRC.0.102	2921	2921	1	MRC.0.102 M102 Hlth-Digestv/Urinary BuyerID 0-12M
+TRN_C.MRC.0.102	2922	2924	3	MRC.0.102 M102 Hlth-Digestv/Urinary Trans 0-36M
+DOL_C.MRC.0.102	2925	2930	6	MRC.0.102 M102 Hlth-Digestv/Urinary Dollars 0-36M
+BUY_C.MRC.0.102	2931	2931	1	MRC.0.102 M102 Hlth-Digestv/Urinary BuyerID 0-36M
+BUYL.MRC.0.103	2932	2932	1	MRC.0.103 M103 Hlth-General BuyerID Life
+TRNL.MRC.0.103	2933	2935	3	MRC.0.103 M103 Hlth-General Trans Life
+DOLL.MRC.0.103	2936	2941	6	MRC.0.103 M103 Hlth-General Dollars Life
+RECL.MRC.0.103	2942	2947	6	MRC.0.103 M103 Hlth-General Recency
+TRNA.MRC.0.103	2948	2950	3	MRC.0.103 M103 Hlth-General Trans 0-12M
+DOLA.MRC.0.103	2951	2956	6	MRC.0.103 M103 Hlth-General Dollars 0-12M
+BUYA.MRC.0.103	2957	2957	1	MRC.0.103 M103 Hlth-General BuyerID 0-12M
+TRN_C.MRC.0.103	2958	2960	3	MRC.0.103 M103 Hlth-General Trans 0-36M
+DOL_C.MRC.0.103	2961	2966	6	MRC.0.103 M103 Hlth-General Dollars 0-36M
+BUY_C.MRC.0.103	2967	2967	1	MRC.0.103 M103 Hlth-General BuyerID 0-36M
+BUYL.MRC.0.104	2968	2968	1	MRC.0.104 M104 Hlth-Hair/Nails/Skin BuyerID Life
+TRNL.MRC.0.104	2969	2971	3	MRC.0.104 M104 Hlth-Hair/Nails/Skin Trans Life
+DOLL.MRC.0.104	2972	2977	6	MRC.0.104 M104 Hlth-Hair/Nails/Skin Dollars Life
+RECL.MRC.0.104	2978	2983	6	MRC.0.104 M104 Hlth-Hair/Nails/Skin Recency
+TRNA.MRC.0.104	2984	2986	3	MRC.0.104 M104 Hlth-Hair/Nails/Skin Trans 0-12M
+DOLA.MRC.0.104	2987	2992	6	MRC.0.104 M104 Hlth-Hair/Nails/Skin Dollars 0-12M
+BUYA.MRC.0.104	2993	2993	1	MRC.0.104 M104 Hlth-Hair/Nails/Skin BuyerID 0-12M
+TRN_C.MRC.0.104	2994	2996	3	MRC.0.104 M104 Hlth-Hair/Nails/Skin Trans 0-36M
+DOL_C.MRC.0.104	2997	3002	6	MRC.0.104 M104 Hlth-Hair/Nails/Skin Dollars 0-36M
+BUY_C.MRC.0.104	3003	3003	1	MRC.0.104 M104 Hlth-Hair/Nails/Skin BuyerID 0-36M
+BUYL.MRC.0.105	3004	3004	1	MRC.0.105 M105 Hlth-Hearing/Vision BuyerID Life
+TRNL.MRC.0.105	3005	3007	3	MRC.0.105 M105 Hlth-Hearing/Vision Trans Life
+DOLL.MRC.0.105	3008	3013	6	MRC.0.105 M105 Hlth-Hearing/Vision Dollars Life
+RECL.MRC.0.105	3014	3019	6	MRC.0.105 M105 Hlth-Hearing/Vision Recency
+TRNA.MRC.0.105	3020	3022	3	MRC.0.105 M105 Hlth-Hearing/Vision Trans 0-12M
+DOLA.MRC.0.105	3023	3028	6	MRC.0.105 M105 Hlth-Hearing/Vision Dollars 0-12M
+BUYA.MRC.0.105	3029	3029	1	MRC.0.105 M105 Hlth-Hearing/Vision BuyerID 0-12M
+TRN_C.MRC.0.105	3030	3032	3	MRC.0.105 M105 Hlth-Hearing/Vision Trans 0-36M
+DOL_C.MRC.0.105	3033	3038	6	MRC.0.105 M105 Hlth-Hearing/Vision Dollars 0-36M
+BUY_C.MRC.0.105	3039	3039	1	MRC.0.105 M105 Hlth-Hearing/Vision BuyerID 0-36M
+BUYL.MRC.0.106	3040	3040	1	MRC.0.106 M106 Hlth-Hrt/Circulatry BuyerID Life
+TRNL.MRC.0.106	3041	3043	3	MRC.0.106 M106 Hlth-Hrt/Circulatry Trans Life
+DOLL.MRC.0.106	3044	3049	6	MRC.0.106 M106 Hlth-Hrt/Circulatry Dollars Life
+RECL.MRC.0.106	3050	3055	6	MRC.0.106 M106 Hlth-Hrt/Circulatry Recency
+TRNA.MRC.0.106	3056	3058	3	MRC.0.106 M106 Hlth-Hrt/Circulatry Trans 0-12M
+DOLA.MRC.0.106	3059	3064	6	MRC.0.106 M106 Hlth-Hrt/Circulatry Dollars 0-12M
+BUYA.MRC.0.106	3065	3065	1	MRC.0.106 M106 Hlth-Hrt/Circulatry BuyerID 0-12M
+TRN_C.MRC.0.106	3066	3068	3	MRC.0.106 M106 Hlth-Hrt/Circulatry Trans 0-36M
+DOL_C.MRC.0.106	3069	3074	6	MRC.0.106 M106 Hlth-Hrt/Circulatry Dollars 0-36M
+BUY_C.MRC.0.106	3075	3075	1	MRC.0.106 M106 Hlth-Hrt/Circulatry BuyerID 0-36M
+BUYL.MRC.0.107	3076	3076	1	MRC.0.107 M107 Hlth-Mem/Sleep/Strs BuyerID Life
+TRNL.MRC.0.107	3077	3079	3	MRC.0.107 M107 Hlth-Mem/Sleep/Strs Trans Life
+DOLL.MRC.0.107	3080	3085	6	MRC.0.107 M107 Hlth-Mem/Sleep/Strs Dollars Life
+RECL.MRC.0.107	3086	3091	6	MRC.0.107 M107 Hlth-Mem/Sleep/Strs Recency
+TRNA.MRC.0.107	3092	3094	3	MRC.0.107 M107 Hlth-Mem/Sleep/Strs Trans 0-12M
+DOLA.MRC.0.107	3095	3100	6	MRC.0.107 M107 Hlth-Mem/Sleep/Strs Dollars 0-12M
+BUYA.MRC.0.107	3101	3101	1	MRC.0.107 M107 Hlth-Mem/Sleep/Strs BuyerID 0-12M
+TRN_C.MRC.0.107	3102	3104	3	MRC.0.107 M107 Hlth-Mem/Sleep/Strs Trans 0-36M
+DOL_C.MRC.0.107	3105	3110	6	MRC.0.107 M107 Hlth-Mem/Sleep/Strs Dollars 0-36M
+BUY_C.MRC.0.107	3111	3111	1	MRC.0.107 M107 Hlth-Mem/Sleep/Strs BuyerID 0-36M
+BUYL.MRC.0.108	3112	3112	1	MRC.0.108 M108 Hlth-Mins/Supps/Vits BuyerID Life
+TRNL.MRC.0.108	3113	3115	3	MRC.0.108 M108 Hlth-Mins/Supps/Vits Trans Life
+DOLL.MRC.0.108	3116	3121	6	MRC.0.108 M108 Hlth-Mins/Supps/Vits Dollars Life
+RECL.MRC.0.108	3122	3127	6	MRC.0.108 M108 Hlth-Mins/Supps/Vits Recency
+TRNA.MRC.0.108	3128	3130	3	MRC.0.108 M108 Hlth-Mins/Supps/Vits Trans 0-12M
+DOLA.MRC.0.108	3131	3136	6	MRC.0.108 M108 Hlth-Mins/Supps/Vits Dollars 0-12M
+BUYA.MRC.0.108	3137	3137	1	MRC.0.108 M108 Hlth-Mins/Supps/Vits BuyerID 0-12M
+TRN_C.MRC.0.108	3138	3140	3	MRC.0.108 M108 Hlth-Mins/Supps/Vits Trans 0-36M
+DOL_C.MRC.0.108	3141	3146	6	MRC.0.108 M108 Hlth-Mins/Supps/Vits Dollars 0-36M
+BUY_C.MRC.0.108	3147	3147	1	MRC.0.108 M108 Hlth-Mins/Supps/Vits BuyerID 0-36M
+BUYL.MRC.0.109	3148	3148	1	MRC.0.109 M109 Hlth-Potency BuyerID Life
+TRNL.MRC.0.109	3149	3151	3	MRC.0.109 M109 Hlth-Potency Trans Life
+DOLL.MRC.0.109	3152	3157	6	MRC.0.109 M109 Hlth-Potency Dollars Life
+RECL.MRC.0.109	3158	3163	6	MRC.0.109 M109 Hlth-Potency Recency
+TRNA.MRC.0.109	3164	3166	3	MRC.0.109 M109 Hlth-Potency Trans 0-12M
+DOLA.MRC.0.109	3167	3172	6	MRC.0.109 M109 Hlth-Potency Dollars 0-12M
+BUYA.MRC.0.109	3173	3173	1	MRC.0.109 M109 Hlth-Potency BuyerID 0-12M
+TRN_C.MRC.0.109	3174	3176	3	MRC.0.109 M109 Hlth-Potency Trans 0-36M
+DOL_C.MRC.0.109	3177	3182	6	MRC.0.109 M109 Hlth-Potency Dollars 0-36M
+BUY_C.MRC.0.109	3183	3183	1	MRC.0.109 M109 Hlth-Potency BuyerID 0-36M
+BUYL.MRC.0.110	3184	3184	1	MRC.0.110 M110 Hlth-Skeletl/Pn Mgmt BuyerID Life
+TRNL.MRC.0.110	3185	3187	3	MRC.0.110 M110 Hlth-Skeletl/Pn Mgmt Trans Life
+DOLL.MRC.0.110	3188	3193	6	MRC.0.110 M110 Hlth-Skeletl/Pn Mgmt Dollars Life
+RECL.MRC.0.110	3194	3199	6	MRC.0.110 M110 Hlth-Skeletl/Pn Mgmt Recency
+TRNA.MRC.0.110	3200	3202	3	MRC.0.110 M110 Hlth-Skeletl/Pn Mgmt Trans 0-12M
+DOLA.MRC.0.110	3203	3208	6	MRC.0.110 M110 Hlth-Skeletl/Pn Mgmt Dollars 0-12M
+BUYA.MRC.0.110	3209	3209	1	MRC.0.110 M110 Hlth-Skeletl/Pn Mgmt BuyerID 0-12M
+TRN_C.MRC.0.110	3210	3212	3	MRC.0.110 M110 Hlth-Skeletl/Pn Mgmt Trans 0-36M
+DOL_C.MRC.0.110	3213	3218	6	MRC.0.110 M110 Hlth-Skeletl/Pn Mgmt Dollars 0-36M
+BUY_C.MRC.0.110	3219	3219	1	MRC.0.110 M110 Hlth-Skeletl/Pn Mgmt BuyerID 0-36M
+BUYL.MRC.0.111	3220	3220	1	MRC.0.111 M111 B2B Ad Specialty BuyerID Life
+TRNL.MRC.0.111	3221	3223	3	MRC.0.111 M111 B2B Ad Specialty Trans Life
+DOLL.MRC.0.111	3224	3229	6	MRC.0.111 M111 B2B Ad Specialty Dollars Life
+RECL.MRC.0.111	3230	3235	6	MRC.0.111 M111 B2B Ad Specialty Recency
+TRNA.MRC.0.111	3236	3238	3	MRC.0.111 M111 B2B Ad Specialty Trans 0-12M
+DOLA.MRC.0.111	3239	3244	6	MRC.0.111 M111 B2B Ad Specialty Dollars 0-12M
+BUYA.MRC.0.111	3245	3245	1	MRC.0.111 M111 B2B Ad Specialty BuyerID 0-12M
+TRN_C.MRC.0.111	3246	3248	3	MRC.0.111 M111 B2B Ad Specialty Trans 0-36M
+DOL_C.MRC.0.111	3249	3254	6	MRC.0.111 M111 B2B Ad Specialty Dollars 0-36M
+BUY_C.MRC.0.111	3255	3255	1	MRC.0.111 M111 B2B Ad Specialty BuyerID 0-36M
+BUYL.MRC.0.112	3256	3256	1	MRC.0.112 M112 B2B Cards/Stationery BuyerID Life
+TRNL.MRC.0.112	3257	3259	3	MRC.0.112 M112 B2B Cards/Stationery Trans Life
+DOLL.MRC.0.112	3260	3265	6	MRC.0.112 M112 B2B Cards/Stationery Dollars Life
+RECL.MRC.0.112	3266	3271	6	MRC.0.112 M112 B2B Cards/Stationery Recency
+TRNA.MRC.0.112	3272	3274	3	MRC.0.112 M112 B2B Cards/Stationery Trans 0-12M
+DOLA.MRC.0.112	3275	3280	6	MRC.0.112 M112 B2B Cards/Stationery Dollars 0-12M
+BUYA.MRC.0.112	3281	3281	1	MRC.0.112 M112 B2B Cards/Stationery BuyerID 0-12M
+TRN_C.MRC.0.112	3282	3284	3	MRC.0.112 M112 B2B Cards/Stationery Trans 0-36M
+DOL_C.MRC.0.112	3285	3290	6	MRC.0.112 M112 B2B Cards/Stationery Dollars 0-36M
+BUY_C.MRC.0.112	3291	3291	1	MRC.0.112 M112 B2B Cards/Stationery BuyerID 0-36M
+BUYL.MRC.0.113	3292	3292	1	MRC.0.113 M113 B2B Comm/Indst/Sfty BuyerID Life
+TRNL.MRC.0.113	3293	3295	3	MRC.0.113 M113 B2B Comm/Indst/Sfty Trans Life
+DOLL.MRC.0.113	3296	3301	6	MRC.0.113 M113 B2B Comm/Indst/Sfty Dollars Life
+RECL.MRC.0.113	3302	3307	6	MRC.0.113 M113 B2B Comm/Indst/Sfty Recency
+TRNA.MRC.0.113	3308	3310	3	MRC.0.113 M113 B2B Comm/Indst/Sfty Trans 0-12M
+DOLA.MRC.0.113	3311	3316	6	MRC.0.113 M113 B2B Comm/Indst/Sfty Dollars 0-12M
+BUYA.MRC.0.113	3317	3317	1	MRC.0.113 M113 B2B Comm/Indst/Sfty BuyerID 0-12M
+TRN_C.MRC.0.113	3318	3320	3	MRC.0.113 M113 B2B Comm/Indst/Sfty Trans 0-36M
+DOL_C.MRC.0.113	3321	3326	6	MRC.0.113 M113 B2B Comm/Indst/Sfty Dollars 0-36M
+BUY_C.MRC.0.113	3327	3327	1	MRC.0.113 M113 B2B Comm/Indst/Sfty BuyerID 0-36M
+BUYL.MRC.0.114	3328	3328	1	MRC.0.114 M114 B2B Furn/Off Decor BuyerID Life
+TRNL.MRC.0.114	3329	3331	3	MRC.0.114 M114 B2B Furn/Off Decor Trans Life
+DOLL.MRC.0.114	3332	3337	6	MRC.0.114 M114 B2B Furn/Off Decor Dollars Life
+RECL.MRC.0.114	3338	3343	6	MRC.0.114 M114 B2B Furn/Off Decor Recency
+TRNA.MRC.0.114	3344	3346	3	MRC.0.114 M114 B2B Furn/Off Decor Trans 0-12M
+DOLA.MRC.0.114	3347	3352	6	MRC.0.114 M114 B2B Furn/Off Decor Dollars 0-12M
+BUYA.MRC.0.114	3353	3353	1	MRC.0.114 M114 B2B Furn/Off Decor BuyerID 0-12M
+TRN_C.MRC.0.114	3354	3356	3	MRC.0.114 M114 B2B Furn/Off Decor Trans 0-36M
+DOL_C.MRC.0.114	3357	3362	6	MRC.0.114 M114 B2B Furn/Off Decor Dollars 0-36M
+BUY_C.MRC.0.114	3363	3363	1	MRC.0.114 M114 B2B Furn/Off Decor BuyerID 0-36M
+BUYL.MRC.0.115	3364	3364	1	MRC.0.115 M115 B2B Gifts/Food BuyerID Life
+TRNL.MRC.0.115	3365	3367	3	MRC.0.115 M115 B2B Gifts/Food Trans Life
+DOLL.MRC.0.115	3368	3373	6	MRC.0.115 M115 B2B Gifts/Food Dollars Life
+RECL.MRC.0.115	3374	3379	6	MRC.0.115 M115 B2B Gifts/Food Recency
+TRNA.MRC.0.115	3380	3382	3	MRC.0.115 M115 B2B Gifts/Food Trans 0-12M
+DOLA.MRC.0.115	3383	3388	6	MRC.0.115 M115 B2B Gifts/Food Dollars 0-12M
+BUYA.MRC.0.115	3389	3389	1	MRC.0.115 M115 B2B Gifts/Food BuyerID 0-12M
+TRN_C.MRC.0.115	3390	3392	3	MRC.0.115 M115 B2B Gifts/Food Trans 0-36M
+DOL_C.MRC.0.115	3393	3398	6	MRC.0.115 M115 B2B Gifts/Food Dollars 0-36M
+BUY_C.MRC.0.115	3399	3399	1	MRC.0.115 M115 B2B Gifts/Food BuyerID 0-36M
+BUYL.MRC.0.116	3400	3400	1	MRC.0.116 M116 B2B High Tech BuyerID Life
+TRNL.MRC.0.116	3401	3403	3	MRC.0.116 M116 B2B High Tech Trans Life
+DOLL.MRC.0.116	3404	3409	6	MRC.0.116 M116 B2B High Tech Dollars Life
+RECL.MRC.0.116	3410	3415	6	MRC.0.116 M116 B2B High Tech Recency
+TRNA.MRC.0.116	3416	3418	3	MRC.0.116 M116 B2B High Tech Trans 0-12M
+DOLA.MRC.0.116	3419	3424	6	MRC.0.116 M116 B2B High Tech Dollars 0-12M
+BUYA.MRC.0.116	3425	3425	1	MRC.0.116 M116 B2B High Tech BuyerID 0-12M
+TRN_C.MRC.0.116	3426	3428	3	MRC.0.116 M116 B2B High Tech Trans 0-36M
+DOL_C.MRC.0.116	3429	3434	6	MRC.0.116 M116 B2B High Tech Dollars 0-36M
+BUY_C.MRC.0.116	3435	3435	1	MRC.0.116 M116 B2B High Tech BuyerID 0-36M
+BUYL.MRC.0.117	3436	3436	1	MRC.0.117 M117 B2B Hr/Training/Sem BuyerID Life
+TRNL.MRC.0.117	3437	3439	3	MRC.0.117 M117 B2B Hr/Training/Sem Trans Life
+DOLL.MRC.0.117	3440	3445	6	MRC.0.117 M117 B2B Hr/Training/Sem Dollars Life
+RECL.MRC.0.117	3446	3451	6	MRC.0.117 M117 B2B Hr/Training/Sem Recency
+TRNA.MRC.0.117	3452	3454	3	MRC.0.117 M117 B2B Hr/Training/Sem Trans 0-12M
+DOLA.MRC.0.117	3455	3460	6	MRC.0.117 M117 B2B Hr/Training/Sem Dollars 0-12M
+BUYA.MRC.0.117	3461	3461	1	MRC.0.117 M117 B2B Hr/Training/Sem BuyerID 0-12M
+TRN_C.MRC.0.117	3462	3464	3	MRC.0.117 M117 B2B Hr/Training/Sem Trans 0-36M
+DOL_C.MRC.0.117	3465	3470	6	MRC.0.117 M117 B2B Hr/Training/Sem Dollars 0-36M
+BUY_C.MRC.0.117	3471	3471	1	MRC.0.117 M117 B2B Hr/Training/Sem BuyerID 0-36M
+BUYL.MRC.0.118	3472	3472	1	MRC.0.118 M118 B2B Mags/Nwsltrs/Bks BuyerID Life
+TRNL.MRC.0.118	3473	3475	3	MRC.0.118 M118 B2B Mags/Nwsltrs/Bks Trans Life
+DOLL.MRC.0.118	3476	3481	6	MRC.0.118 M118 B2B Mags/Nwsltrs/Bks Dollars Life
+RECL.MRC.0.118	3482	3487	6	MRC.0.118 M118 B2B Mags/Nwsltrs/Bks Recency
+TRNA.MRC.0.118	3488	3490	3	MRC.0.118 M118 B2B Mags/Nwsltrs/Bks Trans 0-12M
+DOLA.MRC.0.118	3491	3496	6	MRC.0.118 M118 B2B Mags/Nwsltrs/Bks Dollars 0-12M
+BUYA.MRC.0.118	3497	3497	1	MRC.0.118 M118 B2B Mags/Nwsltrs/Bks BuyerID 0-12M
+TRN_C.MRC.0.118	3498	3500	3	MRC.0.118 M118 B2B Mags/Nwsltrs/Bks Trans 0-36M
+DOL_C.MRC.0.118	3501	3506	6	MRC.0.118 M118 B2B Mags/Nwsltrs/Bks Dollars 0-36M
+BUY_C.MRC.0.118	3507	3507	1	MRC.0.118 M118 B2B Mags/Nwsltrs/Bks BuyerID 0-36M
+BUYL.MRC.0.119	3508	3508	1	MRC.0.119 M119 B2B Off Supps/Equip BuyerID Life
+TRNL.MRC.0.119	3509	3511	3	MRC.0.119 M119 B2B Off Supps/Equip Trans Life
+DOLL.MRC.0.119	3512	3517	6	MRC.0.119 M119 B2B Off Supps/Equip Dollars Life
+RECL.MRC.0.119	3518	3523	6	MRC.0.119 M119 B2B Off Supps/Equip Recency
+TRNA.MRC.0.119	3524	3526	3	MRC.0.119 M119 B2B Off Supps/Equip Trans 0-12M
+DOLA.MRC.0.119	3527	3532	6	MRC.0.119 M119 B2B Off Supps/Equip Dollars 0-12M
+BUYA.MRC.0.119	3533	3533	1	MRC.0.119 M119 B2B Off Supps/Equip BuyerID 0-12M
+TRN_C.MRC.0.119	3534	3536	3	MRC.0.119 M119 B2B Off Supps/Equip Trans 0-36M
+DOL_C.MRC.0.119	3537	3542	6	MRC.0.119 M119 B2B Off Supps/Equip Dollars 0-36M
+BUY_C.MRC.0.119	3543	3543	1	MRC.0.119 M119 B2B Off Supps/Equip BuyerID 0-36M
+BUYL.MRC.0.120	3544	3544	1	MRC.0.120 M120 B2B Uniforms BuyerID Life
+TRNL.MRC.0.120	3545	3547	3	MRC.0.120 M120 B2B Uniforms Trans Life
+DOLL.MRC.0.120	3548	3553	6	MRC.0.120 M120 B2B Uniforms Dollars Life
+RECL.MRC.0.120	3554	3559	6	MRC.0.120 M120 B2B Uniforms Recency
+TRNA.MRC.0.120	3560	3562	3	MRC.0.120 M120 B2B Uniforms Trans 0-12M
+DOLA.MRC.0.120	3563	3568	6	MRC.0.120 M120 B2B Uniforms Dollars 0-12M
+BUYA.MRC.0.120	3569	3569	1	MRC.0.120 M120 B2B Uniforms BuyerID 0-12M
+TRN_C.MRC.0.120	3570	3572	3	MRC.0.120 M120 B2B Uniforms Trans 0-36M
+DOL_C.MRC.0.120	3573	3578	6	MRC.0.120 M120 B2B Uniforms Dollars 0-36M
+BUY_C.MRC.0.120	3579	3579	1	MRC.0.120 M120 B2B Uniforms BuyerID 0-36M
+BUYL.MRC.0.121	3580	3580	1	MRC.0.121 M121 B2B Tools and Ag BuyerID Life
+TRNL.MRC.0.121	3581	3583	3	MRC.0.121 M121 B2B Tools and Ag Trans Life
+DOLL.MRC.0.121	3584	3589	6	MRC.0.121 M121 B2B Tools and Ag Dollars Life
+RECL.MRC.0.121	3590	3595	6	MRC.0.121 M121 B2B Tools and Ag Recency
+TRNA.MRC.0.121	3596	3598	3	MRC.0.121 M121 B2B Tools and Ag Trans 0-12M
+DOLA.MRC.0.121	3599	3604	6	MRC.0.121 M121 B2B Tools and Ag Dollars 0-12M
+BUYA.MRC.0.121	3605	3605	1	MRC.0.121 M121 B2B Tools and Ag BuyerID 0-12M
+TRN_C.MRC.0.121	3606	3608	3	MRC.0.121 M121 B2B Tools and Ag Trans 0-36M
+DOL_C.MRC.0.121	3609	3614	6	MRC.0.121 M121 B2B Tools and Ag Dollars 0-36M
+BUY_C.MRC.0.121	3615	3615	1	MRC.0.121 M121 B2B Tools and Ag BuyerID 0-36M
+BUYL.MRC.0.122	3616	3616	1	MRC.0.122 M122 B2B Miscellaneous BuyerID Life
+TRNL.MRC.0.122	3617	3619	3	MRC.0.122 M122 B2B Miscellaneous Trans Life
+DOLL.MRC.0.122	3620	3625	6	MRC.0.122 M122 B2B Miscellaneous Dollars Life
+RECL.MRC.0.122	3626	3631	6	MRC.0.122 M122 B2B Miscellaneous Recency
+TRNA.MRC.0.122	3632	3634	3	MRC.0.122 M122 B2B Miscellaneous Trans 0-12M
+DOLA.MRC.0.122	3635	3640	6	MRC.0.122 M122 B2B Miscellaneous Dollars 0-12M
+BUYA.MRC.0.122	3641	3641	1	MRC.0.122 M122 B2B Miscellaneous BuyerID 0-12M
+TRN_C.MRC.0.122	3642	3644	3	MRC.0.122 M122 B2B Miscellaneous Trans 0-36M
+DOL_C.MRC.0.122	3645	3650	6	MRC.0.122 M122 B2B Miscellaneous Dollars 0-36M
+BUY_C.MRC.0.122	3651	3651	1	MRC.0.122 M122 B2B Miscellaneous BuyerID 0-36M
