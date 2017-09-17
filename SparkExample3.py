@@ -15,6 +15,7 @@ from pyspark.sql.context import SQLContext
 from pyspark.sql.context import HiveContext
 from pyspark.sql.functions import *
 from pyspark.sql.window import Window
+from subprocess import call
 import math
 from collections import OrderedDict
 
@@ -54,7 +55,7 @@ if __name__ == '__main__':
     .load("file:///home/mandar/Downloads/Spark_Example/resources/meta_config")
     
     metaconfig_dataframe.printSchema()
-    metadata_result = metaconfig_dataframe.select("START", "LENGTH").collect()
+    metadata_result = metaconfig_dataframe.select("START", "LENGTH","FIELDNAME").collect()
     
     #captured header details for fetching record 
     header_info = OrderedDict()
@@ -108,6 +109,13 @@ if __name__ == '__main__':
     else:
         record_dataframe.repartition(1).write.format('com.databricks.spark.csv').options(delimiter=':').save("file:///home/mandar/Downloads/Spark_Example/resources/tsp_result")
         
+    #convert windows to unix conversion
+    print "Executing bash process"
+    
+    call(['bash','/home/mandar/Downloads/Spark_Example/pyspark/example/dataframe/dos2unix_process.sh','/home/mandar/Downloads/Spark_Example/resources/type2_result/part*' ,'tsp_final_result'])
+    
+    print "Finished bash process"
     
     print 'Finished time : ' + str(time() - start_time)
+    
     
